@@ -1,0 +1,25 @@
+// if(hei[i] >= hei[now]){
+//             ans[now] = min(ans[now], tmp + 1);
+//             if(ans[now] == tmp + 1){
+//                 whob[now] = i;
+//             }
+//         }else{
+//             ans[now] = min(ans[now], tmp);
+//             if(ans[now] == tmp){
+//                 whos[now] = i;
+//             }
+//         }
+
+// for (int i = now - 1; i >= now - k; i--){
+//         for(; 0 < len && hei[dan[len]].h <= hei[i].h; len--);
+//         dan[++len] = i;
+//         for(left = min(left, len); dan[left] < now; left++);
+
+//         if(i == 1){
+//             ans[now] = (int)(hei[i].h >= hei[now].h);
+//             break;
+//         }
+//         int tmp = dp(i);
+//         ans[now] = min(ans[now], dp(i) + (int)(hei[i].h >= hei[now].h));
+//     }
+//     return ans[now];

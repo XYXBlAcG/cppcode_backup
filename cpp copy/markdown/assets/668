@@ -1,0 +1,87 @@
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" style="position: fixed; width: 100%; overflow: hidden; ">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=1200">
+    <title>错误 - 7FA4</title>
+    <link href="/cdnjs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+    <link href="/self/tomorrow.css" rel="stylesheet">
+    <link href="/self/math.css" rel="stylesheet">
+    <link href="/self/style.css?20181212" rel="stylesheet">
+    <link href="/cdnjs/morris.js/0.5.1/morris.css" rel="stylesheet">
+    
+      <link href="/google-fonts/fira-mono.css" rel="stylesheet">
+      <link href="/google-fonts/lato.css" rel="stylesheet">
+      <link href="/google-fonts/open-sans.css" rel="stylesheet">
+      <link href="/google-fonts/exo-2.css" rel="stylesheet">
+    
+    <script data-cfasync="false" src="/cdnjs/jquery/3.3.1/jquery.min.js"></script>
+    
+</head>
+<body style="position: relative; margin-top: 49px; height: calc(100% - 49px); overflow-y: overlay; ">
+    <div class="ui fixed borderless menu" style="position: fixed; height: 49px; z-index: 100;">
+        <div class="ui container">
+            
+            <a class="header item" href="/"><span style="font-family: 'Exo 2'; font-size: 1.5em; font-weight: 600; ">7FA4</span></a>
+            
+            <a class="item" href="/"><i class="home icon"></i> 首页</a>
+            <a class="item active" href="/problems/exercises"><i class="list icon"></i> 学习</a>
+            <a class="item" href="/contests"><i class="calendar icon"></i> 模测</a>
+            <a class="item" href="/submissions"><i class="tasks icon"></i> 评测</a>
+            <a class="item" href="/ranklist?default=1"><i class="signal icon"></i> 进度</a>
+            <!-- <a class="item" href="/discussion/global"><i class="comments icon"></i> 讨论</a> -->
+            <a class="item" href="/help"><i class="help circle icon"></i> 帮助</a>
+            
+            <div class="right menu">
+              
+                <div class="item">
+                    <a class="ui button" style="margin-right: 0.5em; " href="/login?url=%2Fproblem%2F72356%2Fanswer%2F668">
+                        登录
+                    </a>
+                    <!-- <a class="ui primary button" href="/sign_up?url=%2Fproblem%2F72356%2Fanswer%2F668">
+                        注册
+                    </a> -->
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 28px; ">
+    <div class="ui main container">
+
+
+
+<div class="ui negative icon message">
+  <i class="remove icon"></i>
+  <div class="content">
+    <div class="header" style="margin-bottom: 10px; ">
+      请登录后继续。
+    </div>
+    
+    <p>
+      
+        <a href="/login?url=%2Fproblem%2F72356%2Fanswer%2F668" style="margin-right: 5px; ">登录</a>
+      
+      <a href="javascript:history.go(-1)">返回上一页</a>
+    </p>
+  </div>
+</div>
+
+<div class="ui center aligned container" style="margin: 0 auto; padding: 20px 0;">
+	<span>
+		<a href="http://beian.miit.gov.cn">蜀ICP备2022022300号-1</a> / 
+		<!-- <a target="_blank" href=" " style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/self/beian.png" style="float:left;"/>川公网安备 51019002003761号</a> / -->
+		7FA4 Powered by <a href="https://github.com/syzoj/syzoj" target="_blank">SYZOJ</a>.
+	</span>
+</div>
+<script data-cfasync="false" src="/cdnjs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script src="/cdnjs/Chart.js/3.9.1/chart.min.js"></script>
+<script src="/cdnjs/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+<script src="/self/script.js?20170710"></script>
+</body>
+</html>
+

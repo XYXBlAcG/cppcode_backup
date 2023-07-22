@@ -1,0 +1,1 @@
+{"name":"Local: B_0630","url":"/Users/xiexie/Desktop/cpp/B_0630.cpp","tests":[{"id":1688103909817,"input":"3 5 \n2 1 2 \n2 3 7 \n1 3 3 \n3 1 9 \n1 2 9 \n10 \n2 2 \n3 1 3 9 \n1 3 2\n1 2 1 \n4 \n2 4 \n2 3 \n1 3 2 \n2 5 \n2 1","output":"5\n2\n-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/B_0630.cpp","group":"local","local":true}

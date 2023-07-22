@@ -1,0 +1,1 @@
+{"name":"Local: hello_world_bf","url":"/Users/xiexie/Desktop/cpp/hello_world_bf.cpp","tests":[{"id":1681548897654,"input":"","output":"Hello, world."}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/hello_world_bf.cpp","group":"local","local":true}

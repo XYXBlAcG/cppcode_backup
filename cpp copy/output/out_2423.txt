@@ -1,0 +1,80 @@
+dont move
+odd smallmax
+-28
+small: -28 
+big: 
+smallmax: -28
+bigmin: 0
+
+small 2 big
+even
+-53
+small: -78 
+big: -28 
+smallmax: -78
+bigmin: -28
+
+dont move
+odd bigmin
+-28
+small: -78 
+big: -28 52 
+smallmax: -78
+bigmin: -28
+
+dont move
+even
+-40
+small: -51 -78 
+big: -28 52 
+smallmax: -51
+bigmin: -28
+
+dont move
+odd bigmin
+-28
+small: -51 -78 
+big: -28 52 42 
+smallmax: -51
+bigmin: -28
+
+big 2 small
+even
+7
+small: -28 -78 -51 
+big: 42 52 78 
+smallmax: -28
+bigmin: 42
+
+dont move
+odd smallmax
+-28
+small: -28 -51 -51 -78 
+big: 42 52 78 
+smallmax: -28
+bigmin: 42
+
+dont move
+even
+-1
+small: -28 -51 -51 -78 
+big: 27 42 78 52 
+smallmax: -28
+bigmin: 27
+
+dont move
+odd bigmin
+27
+small: -28 -51 -51 -78 
+big: 27 42 78 52 51 
+smallmax: -28
+bigmin: 27
+
+dont move
+even
+3
+small: -20 -28 -51 -78 -51 
+big: 27 42 78 52 51 
+smallmax: -20
+bigmin: 27
+

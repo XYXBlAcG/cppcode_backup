@@ -1,0 +1,1 @@
+{"name":"Local: 3462","url":"/Users/xiexie/Desktop/cpp/3462.cpp","tests":[{"id":1687939596750,"input":"5\n1 2 3 4 5\n5 1 3 2 4\n\n","output":"54\n\n"},{"id":1687939605729,"input":"6\n37 12 77 25 72 90\n25 64 76 41 13 83\n\n","output":"20228\n\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/3462.cpp","group":"local","local":true}

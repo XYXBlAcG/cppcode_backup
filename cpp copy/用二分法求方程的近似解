@@ -1,0 +1,9 @@
+#include <cstdio>
+#include <algorithm>
+// const int N = 0;
+typedef unsigned long long llu;
+int n;
+int main(){
+    
+    return 0;
+}

@@ -1,0 +1,1 @@
+{"name":"Local: 3441e","url":"/Users/xiexie/Desktop/cpp/3441e.cpp","tests":[{"id":1687670367267,"input":"3 2","output":"16"},{"id":1687741776970,"input":"2 2","output":"0"},{"id":1687742222780,"input":"2 1","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/3441e.cpp","group":"local","local":true}

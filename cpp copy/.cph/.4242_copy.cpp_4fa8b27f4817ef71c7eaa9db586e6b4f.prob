@@ -1,0 +1,1 @@
+{"name":"Local: 4242_copy","url":"/Users/xiexie/Desktop/cpp/4242_copy.cpp","tests":[{"id":1688999961497,"input":"2\n2\n3 4\n3 5\n3\n3 2\n4 2\n3 1","output":"^o^\nT_T"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/4242_copy.cpp","group":"local","local":true}

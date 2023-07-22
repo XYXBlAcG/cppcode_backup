@@ -1,0 +1,1 @@
+{"name":"Local: 3434","url":"/Users/xiexie/Desktop/cpp/3434.cpp","tests":[{"id":1687665192162,"input":"5\n2 2 2 2 2\nat\ntouch\ncheat\nchoose\ntact\na","output":"23"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/3434.cpp","group":"local","local":true}

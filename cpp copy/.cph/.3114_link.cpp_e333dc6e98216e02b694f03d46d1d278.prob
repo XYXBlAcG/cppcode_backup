@@ -1,0 +1,1 @@
+{"name":"Local: 3114_link","url":"/Users/xiexie/Desktop/cpp/3114_link.cpp","tests":[{"id":1682302491044,"input":"2 4 4\n2 3\n1 2\n1 4\n2 3\n3 4","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/3114_link.cpp","group":"local","local":true}

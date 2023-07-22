@@ -1,0 +1,1 @@
+{"name":"Local: 2511e","url":"/Users/xiexie/Desktop/cpp/2511e.cpp","tests":[{"id":1680614325995,"input":"3 10\n10 3 18\n7 18 -8\n16 19 0","output":"-8 0 17 18 31 35 56 64 102 109"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/2511e.cpp","group":"local","local":true}

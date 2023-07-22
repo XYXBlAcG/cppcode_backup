@@ -1,0 +1,1 @@
+{"name":"Local: nim","url":"/Users/xiexie/Desktop/cpp/nim.cpp","tests":[{"id":1688969772798,"input":"2\n2\n1 1\n2\n1 0","output":"No\nYes"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/nim.cpp","group":"local","local":true}

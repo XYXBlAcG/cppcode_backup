@@ -1,0 +1,1 @@
+{"name":"Local: 2314","url":"/Users/xiexie/Desktop/cpp/2314.cpp","tests":[{"id":1681995677336,"input":"ab[c}d\n\n","output":"adb\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/2314.cpp","group":"local","local":true}

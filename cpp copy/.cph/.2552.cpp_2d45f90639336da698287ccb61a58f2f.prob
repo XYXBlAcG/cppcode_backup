@@ -1,0 +1,1 @@
+{"name":"Local: 2552","url":"/Users/xiexie/Desktop/cpp/2552.cpp","tests":[{"id":1681392295297,"input":"5 10\n1 0 0 0 1\n1 0 1 0 1\n1 1 1 0 1\n0 1 1 1 0\n1 0 0 1 0","output":"7419"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/2552.cpp","group":"local","local":true}

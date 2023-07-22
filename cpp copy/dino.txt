@@ -1,0 +1,5 @@
+Runner.instance_.gameOver=function(){}
+
+Runner.instance_.setSpeed(50)
+
+Runner.instance_.tRex.setJumpVelocity(20)

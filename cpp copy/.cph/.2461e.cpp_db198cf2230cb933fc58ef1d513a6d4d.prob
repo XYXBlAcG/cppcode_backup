@@ -1,0 +1,1 @@
+{"name":"Local: 2461e","url":"/Users/xiexie/Desktop/cpp/2461e.cpp","tests":[{"id":1680245834237,"input":"3 1 14\n6 3 4\n12 4 6\n5\n7\n\n","output":"23.500\n\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/2461e.cpp","group":"local","local":true}

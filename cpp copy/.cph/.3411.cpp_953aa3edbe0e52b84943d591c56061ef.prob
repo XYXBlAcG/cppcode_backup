@@ -1,0 +1,1 @@
+{"name":"Local: 3411","url":"/Users/xiexie/Desktop/cpp/3411.cpp","tests":[{"id":1687144852065,"input":"10\n1 asdfsf\n2 asdf\n2 asdfsf\n1 \n2 \n2 bas\n1 bas\n2 basic\n2 bas\n2 asdfsf","output":"0\n1\n1\n0\n0\n1\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/3411.cpp","group":"local","local":true}

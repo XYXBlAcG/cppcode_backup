@@ -1,0 +1,1 @@
+{"name":"Local: 4113","url":"/Users/xiexie/Desktop/cpp/4113.cpp","tests":[{"id":1682577539076,"input":"2\n\n","output":"3\n\n"},{"id":1682577549390,"input":"1439","output":"102426508"},{"id":1682580599726,"input":"999998","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/4113.cpp","group":"local","local":true}

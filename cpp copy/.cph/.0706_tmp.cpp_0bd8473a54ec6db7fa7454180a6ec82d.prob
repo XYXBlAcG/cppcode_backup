@@ -1,0 +1,1 @@
+{"name":"Local: 0706_tmp","url":"/Users/xiexie/Desktop/cpp/0706_tmp.cpp","tests":[{"id":1688633037644,"input":"5 5\n1 5 4 2 3\n0 2 4\n1 2 3\n0 3 4\n1 1 5\n0 1 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/0706_tmp.cpp","group":"local","local":true}

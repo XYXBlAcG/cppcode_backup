@@ -1,0 +1,1 @@
+{"name":"Local: 2432_re","url":"/Users/xiexie/Desktop/cpp/2432_re.cpp","tests":[{"id":1680421528237,"input":"12\n69 13 56 32 89 38 63 21 86 7 95 42\n1 1 1 2 2 2 2 2 2 2 3 3","output":"69 69 69 56 89 89 89 89 89 89 95 95"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/2432_re.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: 3425","url":"/Users/xiexie/Desktop/cpp/3425.cpp","tests":[{"id":1687328517322,"input":"5 3\n10001\n10101\n11101\n01110\n10010","output":"11100"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/3425.cpp","group":"local","local":true}

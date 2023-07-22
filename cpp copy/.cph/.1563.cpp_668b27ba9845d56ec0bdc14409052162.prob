@@ -1,0 +1,1 @@
+{"name":"Local: 1563","url":"/Users/xiexie/Desktop/cpp/1563.cpp","tests":[{"id":1685005561882,"input":"5 3","output":"A->1 B->2 C->3 \nC->4 \nC->5 \nB->3 C->4 \nC->5 \nB->4 \nA->2 B->3 C->4 \nC->5 \nB->4 \nA->3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/1563.cpp","group":"local","local":true}
