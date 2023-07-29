@@ -1,0 +1,1 @@
+{"name":"Local: 选数异或","url":"/Users/xiexie/Desktop/cpp/选数异或.cpp","tests":[{"id":1690521410416,"input":"4 4 1\n1 2 3 4\n1 4\n1 2\n2 3\n3 3","output":"yes\nno\nyes\nno"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/选数异或.cpp","group":"local","local":true}

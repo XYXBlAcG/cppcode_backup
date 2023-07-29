@@ -1,0 +1,1 @@
+{"name":"Local: 20230728_C","url":"/Users/xiexie/Desktop/cpp/20230728_C.cpp","tests":[{"id":1690508859676,"input":"3 2 2\nATC\nTCG\nACG\n\n","output":"2\n\n"},{"id":1690508871596,"input":"4 3 3\nAAA\nAAAA\nAAA\nAAA","output":"7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/20230728_C.cpp","group":"local","local":true}

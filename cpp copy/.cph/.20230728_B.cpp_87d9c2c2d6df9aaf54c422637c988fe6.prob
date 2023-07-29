@@ -1,0 +1,1 @@
+{"name":"Local: 20230728_B","url":"/Users/xiexie/Desktop/cpp/20230728_B.cpp","tests":[{"id":1690505748083,"input":"1\n1 2\n\n","output":"2\n\n"},{"id":1690505756364,"input":"3\n1 2\n3 5\n7 11","output":"623902744"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/Desktop/cpp/20230728_B.cpp","group":"local","local":true}

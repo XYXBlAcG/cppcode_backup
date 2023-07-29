@@ -1,0 +1,7 @@
+#include <cstdio>
+const int N = 1e5 + 5;
+int n, m, x. ;
+int main(){
+    
+    return 0;
+}

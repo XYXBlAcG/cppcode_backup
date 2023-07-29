@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ana_open_udid</key>
+	<string>1E2B7C4E-95E7-47A3-9ED3-B74D9A56BE26</string>
+	<key>ana_sdk_ver_hash</key>
+	<string>4.2.75.5</string>
+	<key>ana_ver_hash</key>
+	<string>(null)((null))</string>
+	<key>beacon_logid_last_day_gLogIdDict</key>
+	<dict>
+		<key>beacon_logid_realtime_event.0IOS0KB8RZ4OAOJ7</key>
+		<integer>878</integer>
+	</dict>
+	<key>rqd_heartbeat</key>
+	<string>2023-07-27</string>
+	<key>rqd_not_first_usage</key>
+	<true/>
+</dict>
+</plist>
