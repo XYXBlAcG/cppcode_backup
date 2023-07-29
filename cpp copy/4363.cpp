@@ -20,8 +20,8 @@ void dfs(int x, int fa){
 void dfs2(int x, int fa){
     for (auto v : st[x]){
         if(v.v != fa){
+            
             dfs2(v.v, x);
-
         }
     }
 }
