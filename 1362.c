@@ -1,1 +1,1 @@
-main() { puts("Hello, world."); }
+main(){unsigned long long x,p,m,a=0;>>x>>p>>m;for(;p;x=x*2%m,p>>=1)a=p&1?(a+x)%m:a;std::cout<<a;}

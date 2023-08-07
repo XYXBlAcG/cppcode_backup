@@ -1,4 +1,5 @@
 #include <cstdio>
+#include <stdlib.h>
 #include <cstring>
 #include <vector>
 #define int long long
@@ -14,8 +15,8 @@ signed main(){
     scanf("%lld%lld", &n, &m);
     for (int i = 1; i <= m; i++){
         scanf("%lld%lld", &u, &v);
-        st[u].push_back((Node){v, 1});
-        st[v].push_back((Node){u, 1});
+        st[u].push_back((Node){v, 0});
+        st[v].push_back((Node){u, 0});
     }
     for (int i = 1; i <= q; i++){
         memset(c, 0, sizeof(c));
