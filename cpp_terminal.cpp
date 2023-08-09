@@ -16,11 +16,11 @@ using std::endl;
 
 
 //var
-vector<string> command;
-vector<string> helpl;
+vector<string> command, helpl, setcl;
 string now = "";
-string compfile = "", outfile = "", input = "", output = "", filehead = "";
+string compfile = "", outfile = "", _input = "", _output = "", filehead = "";
 int from = 0, to = 0;
+string vers = "0.0.1 dev update in 23/08/07";
 
 
 //method
@@ -31,9 +31,11 @@ void print(string content){
 string input(string com){
     if(com != "") printf("%s $ ", com.c_str());
     else printf("$ ");
-    string inp;
+    string inp = "";
     std::getline(cin, inp);
-    cin >> inp;
+    // cin >> inp;
+    // cout << "you input: \"" << inp << "\"" << endl;
+    if(inp.empty()) inp = input(com); 
     return inp;
 }
 
@@ -42,17 +44,33 @@ void init(){
     helpl.push_back("-l");
     helpl.push_back("-q");
     
-
     command.push_back("clear");
     command.push_back("quit");
     command.push_back("setc");
+    setcl.push_back("-i");
+    setcl.push_back("-o");
+    setcl.push_back("-ii");
+    setcl.push_back("-oo");
+
     command.push_back("cr");
+    command.push_back("vers");
 
     for (string v : command)
         helpl.push_back(v);
     
     system("clear");
     putchar('\n');
+    puts("Checking for updates...");
+
+    // for (int i = 1; i <= 100; i++){
+    //     printf("%d%%", i);
+    //     for (int j = 1; j <= (i + 10) / 10; j++){
+    //         printf(".");
+    //     }putchar('\n');
+    // }
+    puts("You are using the lateset version!");
+    printf("%s\n", vers.c_str());
+    puts("please type enter to type command (bug #1)");
 }
 
 bool checker(vector<string> &mother, string inp){
@@ -60,6 +78,13 @@ bool checker(vector<string> &mother, string inp){
         if(inp == v) return 1;
     return 0;
 }
+
+// char* s2c(string inp){
+//     // warning: string.len() must less than 1e4.
+//     char tmpc[10000];
+//     strcpy(tmpc, inp.c_str());
+//     return tmpc;
+// }
 
 string commander(string inp){
     now = inp;
@@ -75,14 +100,23 @@ string commander(string inp){
     }else if(inp == "setc"){
         return "设置\n";
     }else if(inp == "cr"){
+        if(compfile.empty() or outfile.empty()){
+            puts("空输入输出目录. 请使用 setc 重新设置");
+        }
         string compp = "g++ -Wall -Wextra -g3 ";
         compp += compfile;
         compp += " -o ";
         compp += outfile;
         compp += " -std=c++14";
-        char tmpc[1000] = compp;
+        char tmpc[1000];
+        memset(tmpc, 0, sizeof(tmpc));
+        strcpy(tmpc, compp.c_str());
         system(tmpc);
-        system(tmpc);
+
+        // system(tmpc);
+    }else if(inp == "vers"){
+        now = "";
+        return "version: " + vers;
     }
 }
 
@@ -106,9 +140,11 @@ string helper(string inp){
             }else if(inp == "quit"){
                 return "退出程序, 输入 \"quit\" 可直接使用";
             }else if(inp == "setc"){
-                return "设置输入文件目录和输出目录以编译.\n-h 以手动输入\n-a 设置输入输出文件\n-m 设置多组输入输出\n输入from和to以设置文件格式";
+                return "设置输入文件目录和输出目录以编译.\n-h 以手动输入\n-a 设置输入输出文件\n-m 设置多组输入输出\n输入 from 和 to 以设置文件格式";
             }else if(inp == "cr"){
                 return "编译运行. 如果没有设置输入输出则抛出错误.";
+            }else if(inp == "vers"){
+                return "输出版本号.";
             }
         }
     }
@@ -127,6 +163,12 @@ void quiter(string inp){
         quiter(input("quit"));
     }
 }
+
+string setcer(string inp){
+
+}
+
+// main
 
 int main(){
     init();

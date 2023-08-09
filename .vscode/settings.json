@@ -89,7 +89,8 @@
         "version": "cpp",
         "__config_site": "cpp",
         "__availability": "cpp",
-        "masterencoder": "cpp"
+        "masterencoder": "cpp",
+        "filesystem": "cpp"
     },
     "cph.general.onceMaintainerMessage": false,
     "C_Cpp.errorSquiggles": "disabled"

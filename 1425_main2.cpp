@@ -1,0 +1,56 @@
+#include <cstdio>
+#include <iostream>
+int main(){
+    std::cout << "type of " << (123) << " is " << typeid((123)).name() << std::endl;
+std::cout << "type of " << (123L) << " is " << typeid((123L)).name() << std::endl;
+std::cout << "type of " << (123l) << " is " << typeid((123l)).name() << std::endl;
+std::cout << "type of " << (123LU) << " is " << typeid((123LU)).name() << std::endl;
+std::cout << "type of " << (123llu) << " is " << typeid((123llu)).name() << std::endl;
+std::cout << "type of " << ('\r') << " is " << typeid(('\r')).name() << std::endl;
+std::cout << "type of " << (1.1) << " is " << typeid((1.1)).name() << std::endl;
+std::cout << "type of " << (.1) << " is " << typeid((.1)).name() << std::endl;
+std::cout << "type of " << (1.) << " is " << typeid((1.)).name() << std::endl;
+std::cout << "type of " << (1.e2) << " is " << typeid((1.e2)).name() << std::endl;
+std::cout << "type of " << (.1e-2) << " is " << typeid((.1e-2)).name() << std::endl;
+std::cout << "type of " << (1.1f) << " is " << typeid((1.1f)).name() << std::endl;
+std::cout << "type of " << (1.1L) << " is " << typeid((1.1L)).name() << std::endl;
+std::cout << "type of " << (1e10F) << " is " << typeid((1e10F)).name() << std::endl;
+std::cout << "type of " << (100e100l) << " is " << typeid((100e100l)).name() << std::endl;
+std::cout << "type of " << (1000000000000000) << " is " << typeid((1000000000000000)).name() << std::endl;
+std::cout << "type of " << (1000000000000000u) << " is " << typeid((1000000000000000u)).name() << std::endl;
+std::cout << "type of " << (0x1234) << " is " << typeid((0x1234)).name() << std::endl;
+std::cout << "type of " << (01234U) << " is " << typeid((01234U)).name() << std::endl;
+std::cout << "type of " << (0X12e3f4ll) << " is " << typeid((0X12e3f4ll)).name() << std::endl;
+std::cout << "type of " << (0xAbCdEfL) << " is " << typeid((0xAbCdEfL)).name() << std::endl;
+std::cout << "type of " << ((char)32) << " is " << typeid(((char)32)).name() << std::endl;
+std::cout << "type of " << ((unsigned short)1000) << " is " << typeid(((unsigned short)1000)).name() << std::endl;
+std::cout << "type of " << (long(2)) << " is " << typeid((long(2))).name() << std::endl;
+std::cout << "type of " << (!!2) << " is " << typeid((!!2)).name() << std::endl;
+// std::cout << "type of " << (2 && 2) << " is " << typeid((2 && 2)).name() << std::endl;
+printf("?\n");
+std::cout << "type of " << (true || 2) << " is " << typeid((true || 2)).name() << std::endl;
+std::cout << "type of " << (1 == 2 + 1) << " is " << typeid((1 == 2 + 1)).name() << std::endl;
+std::cout << "type of " << ((1 == 2) + 1) << " is " << typeid(((1 == 2) + 1)).name() << std::endl;
+std::cout << "type of " << (1 + (long long)1) << " is " << typeid((1 + (long long)1)).name() << std::endl;
+std::cout << "type of " << (1 / 2) << " is " << typeid((1 / 2)).name() << std::endl;
+std::cout << "type of " << (1.0 / 2) << " is " << typeid((1.0 / 2)).name() << std::endl;
+std::cout << "type of " << (1 / 2.0) << " is " << typeid((1 / 2.0)).name() << std::endl;
+std::cout << "type of " << (3000000000) << " is " << typeid((3000000000)).name() << std::endl;
+std::cout << "type of " << (3000000000u) << " is " << typeid((3000000000u)).name() << std::endl;
+std::cout << "type of " << (03000000000) << " is " << typeid((03000000000)).name() << std::endl;
+std::cout << "type of " << ((short)2+(short)2) << " is " << typeid(((short)2+(short)2)).name() << std::endl;
+std::cout << "type of " << ('a' + 'a') << " is " << typeid(('a' + 'a')).name() << std::endl;
+std::cout << "type of " << (false + false) << " is " << typeid((false + false)).name() << std::endl;
+std::cout << "type of " << ((1 == 2) + (1 == 2)) << " is " << typeid(((1 == 2) + (1 == 2))).name() << std::endl;
+std::cout << "type of " << (1LL + 1.0) << " is " << typeid((1LL + 1.0)).name() << std::endl;
+std::cout << "type of " << (-2147483648) << " is " << typeid((-2147483648)).name() << std::endl;
+std::cout << "type of " << (2147483648) << " is " << typeid((2147483648)).name() << std::endl;
+std::cout << "type of " << (-2147483647-1) << " is " << typeid((-2147483647-1)).name() << std::endl;
+std::cout << "type of " << (123ul) << " is " << typeid((123ul)).name() << std::endl;
+// std::cout << "type of " << (123f) << " is " << typeid((123f)).name() << std::endl;
+// std::cout << "type of " << (123ULL) << " is " << typeid((123ULL)).name() << std::endl;
+// std::cout << "type of " << (123ulu) << " is " << typeid((123ulu)).name() << std::endl;
+// std::cout << "type of " << (123Ll) << " is " << typeid((123Ll)).name() << std::endl;
+// std::cout << "type of " << ((long long)(1e18 + 55)) << " is " << typeid(((long long)(1e18 + 55))).name() << std::endl;
+    return 0;
+}

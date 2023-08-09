@@ -1,0 +1,50 @@
+int
+long
+long
+unsigned long
+unsigned long long
+char
+double
+double
+double
+double
+double
+float
+long double
+float
+long double
+long
+unsigned long
+int
+unsigned
+long long
+long
+char
+unsigned short
+long
+bool
+bool
+bool
+bool
+int
+long long
+int
+double
+double
+long
+unsigned
+int
+int
+int
+int
+int
+double
+long
+long
+int
+unsigned long
+Not recommended
+unsigned long long
+Not recommended
+Not recommended
+long long

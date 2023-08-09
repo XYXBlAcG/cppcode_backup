@@ -80,7 +80,7 @@ signed main(){
         if(op == 0){
             tree.modify(1, 1, n, l, r, );
         }else if(op == 1){
-
+            
         }else if(op == 2){
 
         }else if(op == 3){
