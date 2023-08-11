@@ -51,7 +51,7 @@ void solve(){
 		int p = 1, j, q;
 		for(i = LN - 1; !((l ^ r) >> i & 1); i--){
 			down(p);
-			p = p << 1 | l >> i & 1;
+			p = p << 1 | (l >> i & 1);
 		}
 		down(p);
 		for(int d = 0, s = l; d <= 1; d++){

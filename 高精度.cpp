@@ -2,15 +2,16 @@
 #include <cstring>
 #include <stdlib.h>
 #include <iostream>
+#include <string>
 #define de(x) std::cout << #x << " = " << x << std::endl
 const int N = 2005; 
 int cc;
 struct Num{
-    int num[N], len, fu; // fu 0 正 1 负
+    int num[N], len, fu, st, bl; // fu 0 正 1 负
 }aa, bb;
 struct Div{
     Num res, remain;
-};
+}zero;
 void sw(int &a, int &b){
     a ^= b;
     b ^= a;
@@ -33,7 +34,8 @@ bool operator == (Num a, Num b){
 }
 void reverse(Num &a){
     int tmp[N];
-    memcpy(tmp, a.num, N);
+    memcpy(tmp, a.num, sizeof(a.num));
+    // memset(a.num, 0, sizeof(a.num));
     for (int i = 1; i <= a.len; i++)
         a.num[i] = tmp[a.len - i + 1];
 }
@@ -55,9 +57,27 @@ inline void input(Num &who){
 }
 inline void output(Num who){
     if(who.fu) printf("-");
-    for (int i = who.len; i ; i--){
-        printf("%d", who.num[i]);
-    }putchar('\n');
+    if(who.st == 1){
+        for (int i = who.len - 1; i >= 0 ; i--){
+            printf("%d", who.num[i]);
+        }
+    }else if(who.st == 2){
+        int fl = 0;
+        for (int i = who.bl - 1; i >= 0 ; i--){
+            if (!who.num[i] && !fl)
+                continue;
+            if (who.num[i] && !fl)
+                fl = 1;
+            printf("%d", who.num[i]);
+        }
+    }else{
+        for (int i = who.len; i ; i--){
+            printf("%d", who.num[i]);
+        }
+    }
+    
+    
+    putchar('\n');
 }
 inline Num Bmax(Num a, Num b){
     if(a.len > b.len) return a;
@@ -68,6 +88,12 @@ inline Num Bmax(Num a, Num b){
     }
     return a;
 }
+inline void move(Num &a, int wei){ // left
+    int tmp[N]; memcpy(tmp, a.num, sizeof(tmp));
+    // memset(a.num, 0, sizeof(a.num));
+    for (int i = N - 5; i ; i--)
+        a.num[i - wei] = tmp[i];
+}
 inline Num normal(int inp){
     Num numb; memset(numb.num, 0, sizeof(numb.num));
     int cnt = 0;
@@ -76,6 +102,14 @@ inline Num normal(int inp){
         inp /= 10;
     }
     numb.len = cnt, numb.fu = 0;
+    return numb;
+}
+inline Num Bstr(std::string inp){
+    Num numb; memset(numb.num, 0, sizeof(numb.num));
+    numb.len = inp.size(), numb.fu = 0;
+    for (int i = 0; i < (int)inp.size(); i++){
+        numb.num[i + 1] = inp[i] - '0';
+    }
     return numb;
 }
 inline void Blen(Num &a){
@@ -142,26 +176,49 @@ Num times(Num a, Num b){
     return ans;
 }
 Div div(Num a, Num b){
-    Num ans, tmp, shang; memset(ans.num, 0, sizeof(ans.num)), ans.len = 1, ans.fu = a.fu ^ b.fu;
-    if(b.len == 1 && b.num[1] == 0) {ans.fu = 0; return (Div){ans, a};}
-    if(Bmax(a, b) == b) {ans.fu = 0; return (Div){ans, a};}
+    Num ans, tmp; memset(ans.num, 0, sizeof(ans.num)), ans.len = 1, ans.fu = a.fu ^ b.fu;
+    if(b.len == 1 && b.num[1] == 0) {ans.fu = 0; return zero;}
+    if(Bmax(a, b) == b) {ans.fu = 0; reverse(a);return (Div){ans, a};}
     else if(a == b) {ans.num[1] = 1, tmp = ans, tmp.fu = 0; return (Div){ans, tmp};}
-    b.fu = 0;
-    for (int i = 1; i <= a.len - b.len; i++){
-        int cnt = 1, test = 0;
-        while(true){
-            Num subs = substra(a, a.len - i + 1, a.len - i + 1 - b.len - test + 1);
-            Num minu = minus(subs, b);
-            if(minu.fu && cnt == 1) test++;
-            else if(minu.fu && cnt > 1) break; 
-        }
-        ans.num[a.len - b.len - test - i + 1] = cnt - 1;
+    a.fu = b.fu = 0; int tm[N]; memset(tm, 0, sizeof(tm));
+    reverse(a), reverse(b);
+    move(a, 1), move(b, 1);
+    for (int i = a.len - b.len - 1; i >= 0; i--){
+        for (int j = 0; j <= b.len; j++)
+			tm[i + j] = b.num[j];
+		while (1){
+			int cmp = 0;
+			for (int j = b.len + i; j >= 0; j--){
+				cmp = a.num[j] - tm[j];
+				if (cmp != 0) break;
+			}
+			if (cmp < 0) break;
+			for (int j = 0; j <= b.len + i; j++){
+				a.num[j] -= tm[j];
+				if (a.num[j] < 0){
+					a.num[j] += 10;
+					a.num[j + 1] -= 1;
+				}
+			}
+			ans.num[i]++;
+		}
+		for (int j = 0; j <= b.len; j++) tm[i + j] = 0;
     }
-    Blen(ans);
-    return (Div){ans, shang};
+    ans.st = 1;
+    a.st = 2, a.bl = b.len;
+    ans.len = (a.len - b.len > 0) ? (a.len - b.len) : 1;
+    Blen(a);
+    // reverse(ans);
+    // move(a, -1), move(b, -1);
+    // printf("%d\n", ans.len);
+    return (Div){ans, a};
 }
 int main(){
-    input(aa), input(bb);
+    zero.res.num[1] = -1;
+    input(aa), input(bb); 
+    // std::string AA, BB; std::cin >> AA >> BB;
+    // Num aa = Bstr(AA), bb = Bstr(BB);
+    // output(aa), output(bb);
     scanf("%d", &cc);
     Num CC = normal(cc);
     output(plus(aa, bb));
@@ -170,7 +227,8 @@ int main(){
     output(minus(bb, CC));
     output(times(aa, bb));
     output(times(aa, CC));
-    // Div diver = div(aa, bb);
-    // output(diver.res);
+    Div diver = div(bb, CC);
+    output(diver.res);
+    // output(diver.remain);
     return 0;
 }

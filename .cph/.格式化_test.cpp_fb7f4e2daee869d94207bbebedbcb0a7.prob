@@ -1,0 +1,1 @@
+{"name":"Local: 格式化_test","url":"/Users/xiexie/code/cpp_new/格式化_test.cpp","tests":[{"id":1691580624590,"input":"#include <cstdio>\nint main(){printf(\"Hello world!\");return 0;}\nend","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/格式化_test.cpp","group":"local","local":true}

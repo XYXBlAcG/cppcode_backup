@@ -61,7 +61,6 @@ void init(){
     system("clear");
     putchar('\n');
     puts("Checking for updates...");
-
     // for (int i = 1; i <= 100; i++){
     //     printf("%d%%", i);
     //     for (int j = 1; j <= (i + 10) / 10; j++){
