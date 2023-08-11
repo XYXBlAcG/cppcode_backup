@@ -1,0 +1,1 @@
+{"name":"Local: section","url":"/Users/xiexie/code/cpp_new/section.cpp","tests":[{"id":1691742666913,"input":"3 0","output":"1"},{"id":1691743171029,"input":"501 170","output":"8830"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/section.cpp","group":"local","local":true}
