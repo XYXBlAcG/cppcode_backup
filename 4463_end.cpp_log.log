@@ -1,0 +1,22 @@
+g++ -Wall -Wextra -std=c++14 /Users/xiexie/code/cpp_new/4463_end.cpp -o /Users/xiexie/code/cpp_new/4463_endg++ -Wall -Wextra -std=c++14 /Users/xiexie/code/cpp_new/4463_rand.cpp -o /Users/xiexie/code/cpp_new/4463_randg++ -Wall -Wextra -std=c++14 /Users/xiexie/code/cpp_new/4463_copy2.cpp -o /Users/xiexie/code/cpp_new/4463_copy2/Users/xiexie/code/cpp_new/4463_rand > /Users/xiexie/code/cpp_new/4463_test/in/1.in
+/Users/xiexie/code/cpp_new/4463_end < /Users/xiexie/code/cpp_new/4463_test/in/1.in > /Users/xiexie/code/cpp_new/4463_test/out/1.out
+/Users/xiexie/code/cpp_new/4463_end < /Users/xiexie/code/cpp_new/4463_test/in/1.in > /Users/xiexie/code/cpp_new/4463_test/out/1.out
+Testcase 1 Accepted./Users/xiexie/code/cpp_new/4463_rand > /Users/xiexie/code/cpp_new/4463_test/in/2.in
+/Users/xiexie/code/cpp_new/4463_end < /Users/xiexie/code/cpp_new/4463_test/in/2.in > /Users/xiexie/code/cpp_new/4463_test/out/2.out
+/Users/xiexie/code/cpp_new/4463_end < /Users/xiexie/code/cpp_new/4463_test/in/2.in > /Users/xiexie/code/cpp_new/4463_test/out/2.out
+Testcase 2 Accepted./Users/xiexie/code/cpp_new/4463_rand > /Users/xiexie/code/cpp_new/4463_test/in/3.in
+/Users/xiexie/code/cpp_new/4463_end < /Users/xiexie/code/cpp_new/4463_test/in/3.in > /Users/xiexie/code/cpp_new/4463_test/out/3.out
+/Users/xiexie/code/cpp_new/4463_end < /Users/xiexie/code/cpp_new/4463_test/in/3.in > /Users/xiexie/code/cpp_new/4463_test/out/3.out
+Testcase 3 Accepted./Users/xiexie/code/cpp_new/4463_rand > /Users/xiexie/code/cpp_new/4463_test/in/4.in
+/Users/xiexie/code/cpp_new/4463_end < /Users/xiexie/code/cpp_new/4463_test/in/4.in > /Users/xiexie/code/cpp_new/4463_test/out/4.out
+/Users/xiexie/code/cpp_new/4463_end < /Users/xiexie/code/cpp_new/4463_test/in/4.in > /Users/xiexie/code/cpp_new/4463_test/out/4.out
+Testcase 4 Accepted./Users/xiexie/code/cpp_new/4463_rand > /Users/xiexie/code/cpp_new/4463_test/in/5.in
+/Users/xiexie/code/cpp_new/4463_end < /Users/xiexie/code/cpp_new/4463_test/in/5.in > /Users/xiexie/code/cpp_new/4463_test/out/5.out
+/Users/xiexie/code/cpp_new/4463_end < /Users/xiexie/code/cpp_new/4463_test/in/5.in > /Users/xiexie/code/cpp_new/4463_test/out/5.out
+Testcase 5 Accepted./Users/xiexie/code/cpp_new/4463_rand > /Users/xiexie/code/cpp_new/4463_test/in/6.in
+/Users/xiexie/code/cpp_new/4463_end < /Users/xiexie/code/cpp_new/4463_test/in/6.in > /Users/xiexie/code/cpp_new/4463_test/out/6.out
+/Users/xiexie/code/cpp_new/4463_end < /Users/xiexie/code/cpp_new/4463_test/in/6.in > /Users/xiexie/code/cpp_new/4463_test/out/6.out
+Testcase 6 Accepted./Users/xiexie/code/cpp_new/4463_rand > /Users/xiexie/code/cpp_new/4463_test/in/7.in
+/Users/xiexie/code/cpp_new/4463_end < /Users/xiexie/code/cpp_new/4463_test/in/7.in > /Users/xiexie/code/cpp_new/4463_test/out/7.out
+/Users/xiexie/code/cpp_new/4463_end < /Users/xiexie/code/cpp_new/4463_test/in/7.in > /Users/xiexie/code/cpp_new/4463_test/out/7.out
+Testcase 7 quit. Wrong Answer. Time = 177.000000ms.

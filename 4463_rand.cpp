@@ -21,7 +21,7 @@ signed main(){
     printf("%lld\n", n);
     a = 1, b = 5e4;
     for (int i = 1; i <= n; i++){
-        printf("%lld ", (rand() % (b - a + 1))+ a);
+        printf("%lld %lld\n", (rand() % (b - a + 1)) + a, (rand() % (b - a + 1)) + a);
     }
 
     return 0;

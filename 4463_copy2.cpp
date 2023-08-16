@@ -2,7 +2,8 @@
 #include<stdlib.h>
 #define int long long
 #define SIZE 128
-int h[20005],a[20005],block[20005],L[200],R[200];
+const int N = 5e5 + 5, M = 1005;
+int h[N],a[N],block[N],L[M],R[M];
 void jh(int* a,int* b)
 {
 	int t=*a;
@@ -107,9 +108,9 @@ signed main()
 	R[cnt]=n;
 	for(i=1;i<=cnt;i++)
 		kp(L[i],R[i]);
-	// for(i=1;i<=n;i++)
-	// 	ans+=cx_up(h[i],1,i-1);
-	printf("%lld\n",ans=3429643);
+	for(i=1;i<=n;i++)
+		ans+=cx_up(h[i],1,i-1);
+	printf("%lld\n",ans);
 	scanf("%lld",&m);
 	for(;m>0;m--)
 	{
