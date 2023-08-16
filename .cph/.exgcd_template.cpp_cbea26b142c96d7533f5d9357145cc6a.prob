@@ -1,0 +1,1 @@
+{"name":"Local: exgcd_template","url":"/Users/xiexie/code/cpp_new/exgcd_template.cpp","tests":[{"id":1692144748074,"input":"3\n2 0 1\n3 4 5\n12345678 87654321 7777777","output":"1k+0\n5k+3\n7777777k+6111150"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/exgcd_template.cpp","group":"local","local":true}

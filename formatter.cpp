@@ -57,7 +57,7 @@ void output(string &result){
 }
 
 void spfu(int& i, char x, char y, int k){ 
-    std::cout << "处理 i = " << i << " , 字符 = \'" << line[k][i] << "\' 的时候使用了 spfu\n";
+    // std::cout << "处理 i = " << i << " , 字符 = \'" << line[k][i] << "\' 的时候使用了 spfu\n";
     if(line[k][i] == x && line[k][i + 1] == y){ 
         if(line[k][i - 1] != ' ') ans[k] += ' ';
         ans[k] += x;
@@ -131,25 +131,28 @@ void work(){
             // if(line[k].back() == ' ') break;
             if(line[k][i] == ' ' && ans[k].back() != ' ') ans[k] += ' ';
 
-            if(line[k][i] == '#'){
-                if(line[k].substr(i + 1, 7) == "include"){
-                    ans[k] += "#include ";
-                    // i += 8;
-                    i += 7;
-                }else if(line[k].substr(i + 1, 6) == "define"){
-                    ans[k] += "#define ";
-                    // i += 7;
-                    i += 6;
-                }
-                // quiter();
-                if(line[k][i] == '<'){
-                    ans[k] += '<';
-                    jian.push(i);
-                }
-            }
+            // if(line[k][i] == '#'){
+            //     if(line[k].substr(i + 1, 7) == "include"){
+            //         ans[k] += "#include ";
+            //         // i += 8;
+            //         i += 7;
+            //     }else if(line[k].substr(i + 1, 6) == "define"){
+            //         ans[k] += "#define ";
+            //         // i += 7;
+            //         i += 6;
+            //     }
+            //     // quiter();
+            //     if(line[k][i] == '<'){
+            //         ans[k] += '<';
+            //         jian.push(i);
+            //     }
+            // }
             // quiter();
             
             if(fuhao.find(line[k][i]) != std::string::npos){
+                for (string a : {"//", "/*", "*/"}){
+
+                }
                 for(char a : {'<', '>', '&', '|', '+', '-', '='}){
                     if(line[k][i] == a) spfu(i, a, a, k);
                     // quiter();
@@ -179,7 +182,7 @@ void work(){
             }
             if(line[k][i] == ';') fenhao(i, k);
             if(line[k][i] == ',') douhao(i, k);
-            for (char a : {'{', '}', '(', ')', '.', '_', '$', '@', '!', '\''}){
+            for (char a : {'{', '}', '(', ')', '.', '_', '$', '@', '!', '\'', '%', '&'}){
                 direct(i, a, k);
             }
             if(line[k][i] == '"'){
@@ -237,9 +240,9 @@ void work(){
         if(ans[i].back() == ';' or ans[i].back() == '{' or ans[i].back() == '}') ans[i] += '\n';
     }
 
-    for (int i = 1; i <= cnt; i++){
-        printf("suojin[%d] = %d\n", i, suojin[i]);
-    }
+    // for (int i = 1; i <= cnt; i++){
+    //     printf("suojin[%d] = %d\n", i, suojin[i]);
+    // }
 
     for (int i = 1; i <= cnt; i++){
         string tmp = string(suojin[i], ' ');

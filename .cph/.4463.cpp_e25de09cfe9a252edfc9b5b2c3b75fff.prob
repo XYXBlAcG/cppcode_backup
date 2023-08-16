@@ -1,0 +1,1 @@
+{"name":"Local: 4463","url":"/Users/xiexie/code/cpp_new/4463.cpp","tests":[{"id":1692146586275,"input":"3\n130 150 140\n2\n2 3\n1 3","output":"1\n0\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/4463.cpp","group":"local","local":true}

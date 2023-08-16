@@ -36,6 +36,8 @@ C.对于没有添加缩进的地方，自动添加大小为 $4$ 个空格的缩�
 
 保证在代码结束的后一行为`end`.
 
+保证代码中间不会出现单行的`end` .
+
 保证不会出现分号连续压行，只因「程宇翔」觉得这个很不好看，如下解释：
 
 ```cpp
@@ -106,7 +108,14 @@ void solve(){ // 代码块 8
 
 ```
 #include <cstdio>
-int main(){int a, b; scanf("%d%d", &a, &b); printf("%d\n", a+b); printf("%d\n", a-b); printf("%d\n", a%b);return 0;}
+int main(){
+  int a, b;       
+ scanf("%d%d", &a, &b);         
+       printf("%d\n", a+b); 
+     printf("%d\n", a-b);           
+  printf("%d\n", a%b);
+return 0;
+}
 end
 3
 1 1
@@ -119,12 +128,12 @@ end
 ```
 #include <cstdio>
 int main(){
-	int a, b;
-	scanf("%d%d", &a, &b);
-	printf("%d\n", a + b);
-	printf("%d\n", a - b);
-	printf("%d\n", a%b);
-	return 0;
+    int a, b;
+    scanf("%d%d", &a, &b);
+    printf("%d\n", a + b);
+    printf("%d\n", a - b);
+    printf("%d\n", a%b);
+    return 0;
 }
 int a, b;
 printf("%d\n", a - b);

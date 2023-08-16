@@ -1,0 +1,1 @@
+{"name":"Local: 4443_copy","url":"/Users/xiexie/code/cpp_new/4443_copy.cpp","tests":[{"id":1692013498654,"input":"10 10\n3 6 2 2 1 5 6 9 1 9 \n0 9 4\n1 1 7\n1 3 9\n0 9 3\n0 8 1\n1 5 8\n0 9 5\n0 7 6\n0 1 9\n1 7 9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/4443_copy.cpp","group":"local","local":true}
