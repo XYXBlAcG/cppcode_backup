@@ -9,13 +9,16 @@ std::map<int, int> to;
 struct Node{
     int id, l, r;
 }pre[N], pre2[N];
-int n, m, a[N], past, p[M][M], s[M][M], num, nu;
+int n, m, a[N], past, p[M][M], s[M][M], num, nu, back[N];
+int query(int l, int r){
+    
+}
 signed main(){
     scanf("%lld%lld", &n, &m);
     num = sqrt(n);
     for (int i = 0, cnt = 1; i < n; i++){
         scanf("%lld", a + i);
-        if(!to[a[i]]) to.insert(a[i], cnt++);
+        if(!to[a[i]]) to.insert(a[i], cnt++), back[cnt - 1] = a[i];
     }
     for (int i = 0; i < n; i++){
         if(i % num == 0) nu++;
@@ -39,16 +42,26 @@ signed main(){
                     maxnu = std::min(a[k], maxnu);
                 }
             }
-            s[i][j] = maxnu;
+            p[i][j] = maxnu;
         }
     }
-    for (int i = 1; i <= n; i++)
+    for (int i = 0, j = 0; i < n; i++){
+        if(j % num == 0) j++;
+        s[j][to[a[i]]]++;
+    }
     for (int i = 1; i <= m; i++){
         int l, r, ll, rr;
         scanf("%lld%lld", &l, &r);
         ll = (l + past - 1) % n + 1, rr = (r + past - 1) % n + 1;
         if(ll > rr) std::swap(l, r);
-
+        printf("%lld\n", past = query(l, r));
+        int il = pre[l].id, ir = pre[r].id;
+        if(il - ir <= 1){
+            int tmp[N];
+            for (int i = l; i <= r; i++){
+                
+            }
+        }
     }
     return 0;
 }
