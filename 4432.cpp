@@ -67,7 +67,6 @@ struct Segment_Tree {
         if (ql <= l && r <= qr)
             return sum[u];
         int mid = (l + r) >> 1;
-        // pushdown(u);
         return
             (query(ls(u), l, mid, ql, qr) +
             query(rs(u), mid + 1, r, ql, qr)) % p;

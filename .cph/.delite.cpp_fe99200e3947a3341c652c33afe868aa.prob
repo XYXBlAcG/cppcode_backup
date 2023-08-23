@@ -1,0 +1,1 @@
+{"name":"Local: delite","url":"/Users/xiexie/code/cpp_new/delite.cpp","tests":[{"id":1692336739849,"input":"4\n2 2\n2 4\n2 1\n1 3","output":"12"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/delite.cpp","group":"local","local":true}
