@@ -1,0 +1,1 @@
+{"name":"Local: 52114514_pa","url":"/Users/xiexie/code/cpp_new/52114514_pa.cpp","tests":[{"id":1692862768046,"input":"3\n0 0 0 3\n1 -1 0 1\n19 3 5 6","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/52114514_pa.cpp","group":"local","local":true}
