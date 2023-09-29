@@ -90,7 +90,9 @@
         "__config_site": "cpp",
         "__availability": "cpp",
         "masterencoder": "cpp",
-        "filesystem": "cpp"
+        "filesystem": "cpp",
+        "iterator": "cpp",
+        "utility": "cpp"
     },
     "cph.general.onceMaintainerMessage": false,
     "C_Cpp.errorSquiggles": "disabled"

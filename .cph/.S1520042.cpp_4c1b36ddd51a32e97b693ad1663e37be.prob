@@ -1,0 +1,1 @@
+{"name":"Local: S1520042","url":"/Users/xiexie/code/cpp_new/S1520042.cpp","tests":[{"id":1692942097307,"input":"4\n1 2 3\n3 1 1\n4 4 2\n2 3 4\n","output":"8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/S1520042.cpp","group":"local","local":true}

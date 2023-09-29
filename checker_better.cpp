@@ -6,17 +6,17 @@
 #include <fstream>
 #define int long long
 using std::cin;
-std::string inputCppFile = "/Users/xiexie/code/cpp_new/4464_test.cpp", \
+std::string inputCppFile = "/Users/xiexie/code/cpp_new/failed_Johnson.cpp", \
 res, \
-outputCppFile = "/Users/xiexie/code/cpp_new/4464_test", \
-correctCppFile = "/Users/xiexie/code/cpp_new/4464_pa.cpp", \
-correctMakeFile = "/Users/xiexie/code/cpp_new/4464_pa", \
-inputMakeFile = "/Users/xiexie/code/cpp_new/4464_rand.cpp", \
-outputMakeFile = "/Users/xiexie/code/cpp_new/4464_rand",\
+outputCppFile = "/Users/xiexie/code/cpp_new/failed_Johnson", \
+correctCppFile = "/Users/xiexie/code/cpp_new/Johnson.cpp", \
+correctMakeFile = "/Users/xiexie/code/cpp_new/Johnson", \
+inputMakeFile = "/Users/xiexie/code/cpp_new/test_Johnson.cpp", \
+outputMakeFile = "/Users/xiexie/code/cpp_new/test_Johnson", \
 res2, \
 res3, \
-inputFileFolder = "/Users/xiexie/code/cpp_new/4464_fo/in/", \
-outputFileFolder = "/Users/xiexie/code/cpp_new/4464_fo/out/";
+inputFileFolder = "/Users/xiexie/code/cpp_new/Johnson_fo/in/", \
+outputFileFolder = "/Users/xiexie/code/cpp_new/Johnson_fo/out/";
 int howMany = -1, cnt = 0, ac = 0;
 clock_t st, ed;
 signed main(){

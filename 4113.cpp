@@ -2,36 +2,33 @@
 #include <cstring>
 typedef unsigned long long ll;
 const int MAXN = 1000000;
-bool isPrime[MAXN + 10];    // 标记是否为质数
-int prime[MAXN + 10];       // 存储质数
-int cnt = 1, n = 0;             // 记录质数个数
+bool isPrime[MAXN + 10];
+int prime[MAXN + 10];
+int cnt = 1, n = 0;
 int mod = 1e9 + 7;
-
 void init() {
-    memset(isPrime, true, sizeof(isPrime));    // 初始化为true
-    isPrime[0] = isPrime[1] = false;           // 0和1不是质数
+    memset(isPrime, true, sizeof(isPrime));
+    isPrime[0] = isPrime[1] = 0;
     for (int i = 2; i <= MAXN; i++) {
         if (isPrime[i]) {
-            prime[cnt++] = i;                  // 记录质数
+            prime[cnt++] = i;
         }
         for (int j = 1; j <= cnt && i * prime[j] <= MAXN; j++) {
-            isPrime[i*prime[j]] = false;        // 筛掉合数
+            isPrime[i * prime[j]] = 0;
             if (i % prime[j] == 0) {
-                break;                          // 保证每个合数只被筛一次
+                break;
             }
         }
     }
 }
-
 ll getTime(int p){
-    ll time = 0;
+    ll t = 0;
     for (ll i = p; n >= i; i *= p){
         if(i == 0) break;
-        time += n / i;
+        t += n / i;
     }
-    return time;
+    return t;
 }
-
 int main() {
     init();
     scanf("%d",&n);

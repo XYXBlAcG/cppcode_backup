@@ -11,17 +11,18 @@ Node f(unsigned S){
     Node ans = (Node){0, 0};
     for (unsigned t = S; t; t = S & (t - 1)){
         Node t1 = f(t), t2 = f(S & ~t);
-        // printf("t1 = %d, t2 = %d\n", t1.cnt, t2.cnt);
         if(t1.cnt * t2.cnt + t1.score + t2.score > ans.score)
             ans = (Node){t1.cnt * t2.cnt + t1.score + t2.score, t1.cnt + t2.cnt};
     }
-    // printf("ans = %lld\n", ans.score);
     return rec[S] = ans;
 }
 int main(){
     scanf("%lld", &n);
     for (int i = 0; i < n; i++) scanf("%lld", a + i);
     for (unsigned i = 1; i < (1 << n) - 1; i++) cnt[i] = cnt[i & (i - 1)] + 1;
+    // if(n == 1) printf("%lld\n", a[0]);
+    // else if(n == 2) printf("%lld\n", a[0] * a[1]);
+    // else 
     printf("%lld\n", f((1 << n) - 1).score);
     return 0;
 }

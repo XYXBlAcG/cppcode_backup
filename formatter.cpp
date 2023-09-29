@@ -74,6 +74,24 @@ void spfu(int& i, char x, char y, int k){
     }
 }
 
+void spfu2(int& i, char x, char y, int k){ 
+    // std::cout << "处理 i = " << i << " , 字符 = \'" << line[k][i] << "\' 的时候使用了 spfu\n";
+    if(line[k][i] == x && line[k][i + 1] == y){ 
+        // if(line[k][i - 1] != ' ') ans[k] += ' ';
+        ans[k] += x;
+        ans[k] += y;
+        // if(line[k][i + 2] != ' ') ans[k] += ' ';
+        flagForTwo = 1;
+        i++;
+        // i += 2;
+    }
+    else if(line[k][i - 1] == x && line[k][i] == y){ 
+        // i += 2;
+        // i++;
+        flagForTwo = 0;
+    }
+}
+
 void nofu(int i, char x, int k){
     if(line[k][i - 1] != ' ' && ans[k].back() != ' '){
         ans[k] += ' ';
@@ -116,6 +134,12 @@ void douhao(int i, int k){
     }
 }
 
+// void includer(int i, int k){
+//     if(line[i].find("include") || line[i].find("define")){
+
+//     }
+// }
+
 void work(){
     // for (auto v : line[k]){
     //     if(v != ' ' && v != '\n')
@@ -153,17 +177,33 @@ void work(){
                 for (string a : {"//", "/*", "*/"}){
 
                 }
-                for(char a : {'<', '>', '&', '|', '+', '-', '='}){
+                // for(char a : {'<', '>', '&', '|', '+', '-', '='}){
+                //     if(line[k][i] == a) spfu(i, a, a, k);
+                //     // quiter();
+                // }
+                for (char a : {'+', '-'}){
+                    if(line[k][i] == a) spfu2(i, a, a, k);
+                }
+                for (char a : {'<', '>', '&', '|', '='}){
                     if(line[k][i] == a) spfu(i, a, a, k);
-                    // quiter();
                 }
                 for(std::string a : {"<=", ">=", "!="}){
                     if((line[k][i] == a[0] && line[k][i + 1] == a[1]) || (line[k][i - 1] == a[0] && line[k][i] == a[1]))
                         spfu(i, a[0], a[1], k);
                     // quiter();
                 }
+                if(!flagForTwo && line[k][i] == '<'){
+                    if(line[k].find("include") || line[k].find("define")){
+                        puts("include || define detected, push 1.");
+                        ans[k] += '<';
+                        jian.push(1);
+                    }else{
+                        ans[k] += " < ";
+                    }
+                }
                 if(line[k][i] == '>' && !flagForTwo){
                     if(jian.top()){
+                        puts("detected > symbol, pop.");
                         ans[k] += '>';
                         jian.pop();
                     }else{
@@ -171,7 +211,7 @@ void work(){
                     }
                 }
                 if(!flagForTwo){
-                    for (char a : {'<', '+', '-', '*', '/', '=', '^', '?', ':', '~'}){
+                    for (char a : {'+', '-', '*', '/', '=', '^', '?', ':', '~'}){
                         nofu(i, a, k);
                         // quiter();
                     }
@@ -182,7 +222,7 @@ void work(){
             }
             if(line[k][i] == ';') fenhao(i, k);
             if(line[k][i] == ',') douhao(i, k);
-            for (char a : {'{', '}', '(', ')', '.', '_', '$', '@', '!', '\'', '%', '&'}){
+            for (char a : {'{', '}', '(', ')', '.', '_', '$', '@', '!', '\'', '%', '&', '#'}){
                 direct(i, a, k);
             }
             if(line[k][i] == '"'){
@@ -216,8 +256,13 @@ void work(){
             // }
             if(ans[i][j] == '{'){
                 bigg.push(i);
-                if(ans[i].find('}') != string::npos) {suojin[i] = suojin[i - 1]; printf("the same line {}\n");}
-                else {suojin[i + 1] = suojin[i] + 4; printf("modify + 4\n");}
+                if(ans[i].find('}') != string::npos) {
+                    suojin[i] = suojin[i - 1]; 
+                    // printf("the same line {}\n");
+                }else {
+                    suojin[i + 1] = suojin[i] + 4; 
+                    // printf("modify + 4\n");
+                }
                 // flag = 1;
                 // if(j < (int)ans[i].size() - 1){
                 //     ans[i].insert(j, "\n");
@@ -258,6 +303,5 @@ int main(){
     input();
     work();
     output(done);
-    
     return 0;
 }

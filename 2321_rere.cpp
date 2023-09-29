@@ -24,7 +24,6 @@ int main(){
         q[i].r = j;
     }
     int cntt = 0;
-    
     for (int i = 1; i <= n; i++){
         if(vis[i]) continue;
         ++cntt;

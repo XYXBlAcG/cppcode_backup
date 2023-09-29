@@ -1,0 +1,12 @@
+11
+push 1
+push 5
+push 10
+pop
+head
+tail
+pop
+tail
+push 3
+all
+what

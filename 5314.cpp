@@ -4,7 +4,7 @@
 #include <algorithm>
 typedef unsigned long long ll;
 const ll INF = 0x3f3f3f3f3f3f3f3f, N = 2005;
-ll n, P, M, qp[3][N], sum[7][N][N], sum2[7][N][N];
+ll n, P, M, qp[3][N], sum[7][N], sum2[7][N], num[7][N], mlen, mmid;
 std::string str[7];
 void pre(){
     qp[0][0] = qp[1][0] = 1;
@@ -18,10 +18,10 @@ void pre(){
         th = 0;
         for (int j = 0; j < (int)str[i].size(); j++){
             ll tmp = 0;
-            for (int k = j; k < (int)str[i].size(); k++){
-                tmp += str[i][j] - 'a' + 1;
+            // for (int k = j; k < (int)str[i].size(); k++){
+                tmp += str[i][j] + 1;
                 sum[i][j][k] = (th += (tmp) * qp[T][j + 1] % P);
-            }
+            // }
         }
     }
     P = 9223372036854775807, M = 2, T = 1;
@@ -48,8 +48,8 @@ void insert(ll h0, ll h1, ll ii){
     L[++nL] = {{ii, h0, h1}, head[h0]};
     head[h0] = nL;
 }
-ll lisan(int i, int j, int k){
-    return i * 2001 * 2001 + j * 2001 + k;
+ll lisan(int i, int l, int r){
+    return sum[i][r] - sum[i][l - 1] * qp[0][r - l + 1];
 }
 NN query(ll h0, ll h1, ll ii){
     for (int i = head[h0]; i; i = L[i].nxt){
@@ -59,14 +59,29 @@ NN query(ll h0, ll h1, ll ii){
     }
     return L[nL].a;
 }
-bool check(int l, int r){
-
+bool check(int mi){
+    nL = 0;
+    for (int i = 1; i < n; i++){
+        for (int j = 0; j + mi - 1 <= str[i].size() - 1; j++){
+            ll tmp = 
+        }
+    }
 }
 int main(){
     pre();
     scanf("%llu", &n);
     for (int i = 1; i <= n; i++){
         std::cin >> str[i];
+    }
+    for (int i = 1; i <= n; i++){
+        for (int j = 0; j < str[i].size(); j++){
+            num[i][j + 1] = str[i][j];
+        }
+        if(mlen > str[i].size()){
+            mlen = str[i].size();
+            mmid = i;
+        }
+        
     }
     if(n == 1){
         printf("%llu\n", (ll)str[1].size());

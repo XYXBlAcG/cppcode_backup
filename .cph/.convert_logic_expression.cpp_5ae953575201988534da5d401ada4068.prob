@@ -1,0 +1,1 @@
+{"name":"Local: convert_logic_expression","url":"/Users/xiexie/code/cpp_new/convert_logic_expression.cpp","tests":[{"id":1694224660642,"input":"(((p-q)&&(q-p))-(p||q))","output":"(!((!p||q)&&(!q||p))||(p||q))"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/convert_logic_expression.cpp","group":"local","local":true}

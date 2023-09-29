@@ -1,0 +1,1 @@
+{"name":"Local: 5322_re","url":"/Users/xiexie/code/cpp_new/5322_re.cpp","tests":[{"id":1693212878623,"input":"5 5\naabaa\n2 1 2 4 5\n1 2 b\n2 2 2 3 3\n2 1 2 3 4\n2 2 3 4 5","output":"Yes\nYes\nNo\nNo"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/5322_re.cpp","group":"local","local":true}
