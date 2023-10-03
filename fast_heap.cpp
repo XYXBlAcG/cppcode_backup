@@ -15,17 +15,4 @@ struct Heap{
     T* begin(){return &data[1];}
     T* end(){return &data[pdata + 1];}
 };
-Heap<int> a;
-int main(){
-    a.push(1);
-    a.push(2);
-    a.push(6);
-    a.push(4);
-    printf("%d\n", a.top());
-    a.pop();
-    printf("%d\n", a.size());
-    for (int v : a){
-        printf("%d ", v);
-    }putchar('\n');
-    return 0;
-}
+// Heap<int> a;

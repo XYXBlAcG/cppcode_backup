@@ -1,0 +1,1 @@
+{"name":"Local: 6351","url":"/Users/xiexie/code/cpp_new/6351.cpp","tests":[{"id":1696149951436,"input":"3\n1\n10 11\n1 4\n2 3\n\n","output":"6\n\n"},{"id":1696159216030,"input":"3 3 5 7 6 10 1999999 2000000","output":"12"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/6351.cpp","group":"local","local":true}

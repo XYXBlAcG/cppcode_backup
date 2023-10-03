@@ -27,7 +27,7 @@ int main(){
     for (int i = 1; i <= n; i++){
         if(op != 3){
             if(op == 2) scanf("%d%d", &a, &b);
-            printf("第 %d 个随机数为: %d\n", i, (rand() % (b - a + 1))+ a);
+            printf("第 %d 个随机数为: %d\n", i, (rand() % (b - a + 1)) + a);
         }else{
             printf("第 %d 个随机数为: %lf\n", i, rand() / double(RAND_MAX));
         }
