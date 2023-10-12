@@ -1,0 +1,1 @@
+{"name":"Local: T2_1009","url":"/Users/xiexie/code/cpp_new/T2_1009.cpp","tests":[{"id":1696895100612,"input":"7 6\n-1 7\n1 2\n2 3\n5 4\n2 7\n3 5\n6 3","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/T2_1009.cpp","group":"local","local":true}

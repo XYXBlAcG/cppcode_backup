@@ -1,6 +1,7 @@
 #include <cstring>
 #include <iostream>
 #include <queue>
+#include <bitset>
 #define INF 1e9
 using namespace std;
 struct edge {

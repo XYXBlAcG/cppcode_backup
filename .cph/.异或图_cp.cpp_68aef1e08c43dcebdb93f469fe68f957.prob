@@ -1,0 +1,1 @@
+{"name":"Local: 异或图_cp","url":"/Users/xiexie/code/cpp_new/异或图_cp.cpp","tests":[{"id":1696815088380,"input":"10\n1927242782 1593267928 1884889768 186141597 770971011 1757501012 1067557346 232872350 1136397675 716024205","output":"3876733196"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/异或图_cp.cpp","group":"local","local":true}

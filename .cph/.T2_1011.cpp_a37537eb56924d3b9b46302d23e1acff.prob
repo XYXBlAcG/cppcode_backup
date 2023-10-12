@@ -1,0 +1,1 @@
+{"name":"Local: T2_1011","url":"/Users/xiexie/code/cpp_new/T2_1011.cpp","tests":[{"id":1697071536750,"input":"5 10\n8 7 14 8 3\n4 2 5 8 2\n","output":"So Sad!\n"},{"id":1697071546840,"input":"5 14\n21 20 17 22 1\n11 22 3 15 6","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/T2_1011.cpp","group":"local","local":true}

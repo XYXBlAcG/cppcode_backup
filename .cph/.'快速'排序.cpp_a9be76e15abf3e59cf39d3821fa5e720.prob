@@ -1,0 +1,1 @@
+{"name":"Local: '快速'排序","url":"/Users/xiexie/code/cpp_new/'快速'排序.cpp","tests":[{"id":1696810503358,"input":"1 4 3 20","output":"2\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/'快速'排序.cpp","group":"local","local":true}

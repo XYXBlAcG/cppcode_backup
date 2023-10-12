@@ -31,7 +31,6 @@ struct Tree{
         }
     }
     inline Node* merge(Node* u, Node* v){
-        if(u == np && v == np) return np;
         if(u == np || v == np) return u == np ? v : u; 
         if(u->rank < v->rank){
             u->son[1] = merge(u->son[1], v), u->upd();
@@ -52,14 +51,17 @@ struct Tree{
         pir l = split(tmp.first, cur - 1);
         if(l.second->cnt > 1) l.second->cnt--, l.second->upd(), l.first = merge(l.first, l.second);
         else{
-            if(tmp.first == l.second) tmp.first = nullptr;
+            if(tmp.first == l.second) tmp.first = np;
             delete l.second;
-            l.second = nullptr;
+            l.second = np;
         }
         root = merge(l.first, tmp.second);
     }
     inline void modify(int cur, int val){
         del(cur), insert(cur, val);
+    }
+    inline void query(int cur, int len){
+        
     }
     
 }tree;

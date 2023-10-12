@@ -4,7 +4,6 @@ namespace xyx{
     T max(T head) {
         return head;
     }
-
     template<class T, typename... Args>
     T max(T head, Args... args) {
         T t = max<T>(args...);

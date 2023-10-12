@@ -4,6 +4,7 @@
 #define int long long
 #define INF 0x3f3f3f3f3f3f3f3f
 #define np nullptr
+#define sz(v) ((v->ch[0] != np ? (v->ch[0]->size + 1) : 1))
 #define mxs(id) (ch[id] != np ? ch[id]->mx : -INF)
 using std::max;
 int n, m, val;
@@ -25,7 +26,7 @@ struct Tree{
     }
     inline void insert(Node*& v, int idx){
         if(v == np) return void(v = new Node(val));
-        int rank = (v->ch[0] != np ? (v->ch[0]->size + 1) : 1);
+        int rank = sz(v);
         bool sn = (idx >= rank);
         insert(v->ch[sn], idx - sn * rank);
         if((v->hp) < (v->ch[sn] != np ? (v->ch[sn]->hp) : 0)) rotate(v, sn);
@@ -33,24 +34,23 @@ struct Tree{
     }
     inline void modify(Node*& v, int idx){
         if(v == np) return;
-        int rank = (v->ch[0] != np ? (v->ch[0]->size + 1) : 1);
+        int rank = sz(v);
         bool sn = (idx >= rank);
         if(idx == rank) {v->val = val; return void(v->upd());}
         modify(v->ch[sn], idx - sn * rank), v->upd();
     }
     inline int query(Node* v, int l, int r){
         if(v == np) return -INF;
-        // hpntf("v->id = %lld %lld %lld\n", v->idx, v->val, v->mx);
         if(r < 1 || l > v->size) return -INF;
         if(l <= 1 && v->size <= r) return v->mx;
-        int rank = (v->ch[0] != np ? (v->ch[0]->size + 1) : 1);
+        int rank = sz(v);
         int ans = (l <= rank && rank <= r) ? v->val : -INF;
         for (int i = 0; i <= 1; i++) ans = max(ans, query(v->ch[i], l - i * rank, r - i * rank));
         return ans;
     }
 }tree;
 signed main(){
-    srand(114514);
+    srand(1919810);
     scanf("%lld%lld", &n, &m);
     for (int i = 1; i <= n; i++)
         scanf("%lld", &val), tree.insert(root, i);
