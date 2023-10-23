@@ -5,6 +5,7 @@ using namespace xyx;
 const int N = 1e5 + 5;
 Heap<std::pair<int, int>, N> heap;
 CQueue<int> q;
+MakeTree<N> maketree;
 int main(){
     // printf("%d\n", xyx::moder((int)1e9 + 7, 1, 4, 5, 6, 1324234, 546456, 678678, 3423423, 192837464251));
     // printf("%d\n", xyx::max(1, 2, 3, 5, 8, 20));
@@ -31,6 +32,12 @@ int main(){
     // q.enque(1);
     // printf("%d\n", std::max(1, 2, 3, 4, 5, 6));
     // printf("%d\n", xyx::max(114, 514, 1919, 810, 2736123, 345345,12312, 23423));
-    // printf("%d\n", std::max({114, 514, 1919, 810, 2736123, 345345,12312, 23423}));   
+    // printf("%d\n", std::max({114, 514, 1919, 810, 2736123, 345345,12312, 23423})); 
+    // __int128_t int128;
+    // fin(int128);
+    // fout(int128);
+    freopen("maketree.out", "w", stdout);
+    int n = 10000;
+    maketree.makeTree(n, 1);
     return 0;
 }

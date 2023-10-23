@@ -4,21 +4,19 @@ typedef long long ll;
 const int N = 1e6 + 5;
 bool prime[N];
 int get_prime(ll x, ll y){
-    for (int i = 1; i <= N; i++){
+    for (int i = 1; i <= N; i++)
         prime[i] = 0;
-    }
     for (ll i = 2; i <= y; i++){
         ll j = x;
-        while(!(j % i)){
+        while(!(j % i))
             j++;
-        }
-        for (; j <= x + y; j += i){
+        for (; j <= x + y; j += i)
             prime[j - x] = 1;
-        }
-    }int ans = 0;
-    for (ll i = 1; i <= y; i++){
+    }
+    int ans = 0;
+    for (ll i = 1; i <= y; i++)
         if(!prime[i]) ans++;
-    }return ans;
+    return ans;
 }
 inline long long read() {
     long long x = 0, w = 1;

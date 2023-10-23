@@ -1,0 +1,1 @@
+{"name":"Local: 拯救牢大_正解","url":"/Users/xiexie/code/cpp_new/拯救牢大_正解.cpp","tests":[{"id":1697585235567,"input":"3 1\n1 2 4\n6 8 3\n9 5 7","output":"B B B\nK B B\nK B B"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/拯救牢大_正解.cpp","group":"local","local":true}

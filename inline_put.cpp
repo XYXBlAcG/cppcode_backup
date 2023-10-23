@@ -53,7 +53,7 @@ namespace xyx{
         do {
             sta[top++] = x % 10, x /= 10;
         } while (x);
-        while (top) putchar(sta[--top] + 48);  // 48 是 '0'
+        while (top) putchar(sta[--top] + 48);
     }
     template<typename T>
     void fout(T cur){write(cur);}

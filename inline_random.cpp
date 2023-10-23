@@ -23,6 +23,39 @@ namespace xyx{
         std::copy(v.begin(), v.end(), std::ostream_iterator<int>(std::cout, " "));
         putchar('\n');
     }
+    
+
+    template <size_t Size>
+    struct MakeTree{
+        int fa[Size];
+        void init(int n){
+            for (int i = 1; i <= n; i++) fa[i] = i;
+        }
+        int find(int a){
+            return fa[a] == a ? a : fa[a] = find(fa[a]);
+        }
+        bool same(int a, int b){
+            return find(a) == find(b);
+        }
+        void merge(int a, int b){
+            a = find(a), b = find(b);
+            fa[a] = b;
+        }
+        void makeTree(int n, int st){
+            init(n);
+            printf("%d\n", n);
+            for (int i = 1; i < n; i++){
+                int a = random(st, n - 1 + st), b = random(st, n - 1 + st);
+                // printf("a = %d, b = %d\n", a, b);
+                // printf("find(a) = %d, find(b) = %d\n", find(a), find(b));
+                while(same(a, b)) a = random(st, n - 1 + st), b = random(st, n - 1 + st);
+                merge(a, b);
+                // printf("afind(a) = %d, afind(b) = %d\n", find(a), find(b));
+                printf("%d %d\n", a, b);
+            }
+        }
+    };
+    
 
 
     // old rand

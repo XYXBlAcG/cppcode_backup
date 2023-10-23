@@ -93,7 +93,9 @@
         "filesystem": "cpp",
         "iterator": "cpp",
         "utility": "cpp",
-        "functional": "cpp"
+        "functional": "cpp",
+        "memory_resource": "cpp",
+        "nextprime.c": "cpp"
     },
     "cph.general.onceMaintainerMessage": false,
     "C_Cpp.errorSquiggles": "disabled"

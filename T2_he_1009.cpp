@@ -22,6 +22,7 @@ void Pre_dfs(int v){
 void dfs(int v){
 	for(auto u:son[v])dfs(u);
 	rep(j,0,tot){
+	
 		rep(i,0,siz[v]){
 			rep(t,P[v],tot)f[v][i][j]=min(f[v][i][j],g[Son[v]][h(i-(t<=j))][min(t,j)]+b[t]-b[P[v]]);
 		}

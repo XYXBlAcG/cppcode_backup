@@ -1,0 +1,1 @@
+{"name":"Local: 海豹","url":"/Users/xiexie/code/cpp_new/海豹.cpp","tests":[{"id":1697603965889,"input":"5 5\n#..#.\n...M.\n..#.#\n..#..\n#X##.\n","output":"1\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/海豹.cpp","group":"local","local":true}
