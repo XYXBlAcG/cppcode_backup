@@ -95,7 +95,8 @@
         "utility": "cpp",
         "functional": "cpp",
         "memory_resource": "cpp",
-        "nextprime.c": "cpp"
+        "nextprime.c": "cpp",
+        "__undef_macros": "cpp"
     },
     "cph.general.onceMaintainerMessage": false,
     "C_Cpp.errorSquiggles": "disabled"

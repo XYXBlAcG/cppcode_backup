@@ -1,0 +1,1 @@
+{"name":"Local: 6221","url":"/Users/xiexie/code/cpp_new/6221.cpp","tests":[{"id":1698138551241,"input":"3 2\n1 2\n2 3\n* 1 3 4\n/ 1 1","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/6221.cpp","group":"local","local":true}

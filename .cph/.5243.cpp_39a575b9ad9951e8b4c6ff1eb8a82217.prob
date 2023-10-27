@@ -1,0 +1,1 @@
+{"name":"Local: 5243","url":"/Users/xiexie/code/cpp_new/5243.cpp","tests":[{"id":1698366407823,"input":"3 1\n1 2 1\n2 3 2\n","output":"1\n2\n"},{"id":1698366414147,"input":"3 3\n1 2 1\n2 3 2","output":"1\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/5243.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: [NOI2014] 起床困难综合症","url":"/Users/xiexie/code/cpp_new/[NOI2014] 起床困难综合症.cpp","tests":[{"id":1698204054437,"input":"3 10\nAND 5\nOR 6\nXOR 7","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/[NOI2014] 起床困难综合症.cpp","group":"local","local":true}

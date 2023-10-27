@@ -234,7 +234,7 @@ void work(){
                 }
                 ans[k] += line[k][i];
             }
-            // debug4(k);
+            debug4(k);
         }
     }
 
@@ -282,7 +282,7 @@ void work(){
         //     for (int k = 1; k <= i; k++){
         //         printf("suojin[%d] = %d\n", k, suojin[k]);
         //     }printf("end\n");
-        if(ans[i].back() == ';' or ans[i].back() == '{' or ans[i].back() == '}') ans[i] += '\n';
+        if(ans[i].back() == ';' or ans[i].back() == '{' or ans[i].back() == '}' or ans[i].find("#include") or ans[i].find("#define")) ans[i] += '\n';
     }
 
     // for (int i = 1; i <= cnt; i++){

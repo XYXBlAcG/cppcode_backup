@@ -23,6 +23,7 @@ namespace xyx{
     // fast read
     template<typename T>
     void read(T& x) {
+        x = 0;
         T w = 1;
         char ch = 0;
         while (ch < '0' || ch > '9') {
