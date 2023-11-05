@@ -1,0 +1,1 @@
+{"name":"Local: 铺设道路","url":"/Users/xiexie/code/cpp_new/铺设道路.cpp","tests":[{"id":1698718913859,"input":"6   \n4 3 2 5 3 5\n\n","output":"9\n\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/铺设道路.cpp","group":"local","local":true}

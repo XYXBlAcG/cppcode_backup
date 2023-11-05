@@ -1,0 +1,1 @@
+{"name":"Local: 树的距离和","url":"/Users/xiexie/code/cpp_new/树的距离和.cpp","tests":[{"id":1699010386070,"input":"4\n1 2 1\n1 3 2\n1 4 3\n","output":"18\n"},{"id":1699010887050,"input":"6\n1 2 1\n1 3 2\n1 4 3\n2 5 8\n2 6 10\n","output":"124\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/树的距离和.cpp","group":"local","local":true}

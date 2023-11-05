@@ -28,5 +28,9 @@ namespace xyx{
     void xxx(){puts("xxx");fflush(stdout);}
     void yyy(){puts("yyy");fflush(stdout);}
     void zzz(){puts("zzz");fflush(stdout);}
+    void start(){puts("-----start-----");fflush(stdout);}
+    void end(){puts("-----end-----");fflush(stdout);}
+    void ___(){puts("--------------------------------------");fflush(stdout);}
+    
     // wait to add sth.
 };

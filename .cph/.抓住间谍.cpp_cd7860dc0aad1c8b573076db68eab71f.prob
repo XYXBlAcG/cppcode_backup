@@ -1,0 +1,1 @@
+{"name":"Local: 抓住间谍","url":"/Users/xiexie/code/cpp_new/抓住间谍.cpp","tests":[{"id":1699077084081,"input":"4 1\n1 2 3 4\n","output":"1 2\n"},{"id":1699077092370,"input":"5 3\n0 3 1 2 3\n0 2 2 4\n1 2 1 5","output":"2 3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/抓住间谍.cpp","group":"local","local":true}

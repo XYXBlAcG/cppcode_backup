@@ -1,0 +1,1 @@
+{"name":"Local: 棋盘最短路2","url":"/Users/xiexie/code/cpp_new/棋盘最短路2.cpp","tests":[{"id":1699009807876,"input":"5 5\n1 1 1 1 1\n9 9 9 9 1\n1 1 1 1 1\n1 9 9 9 9\n1 1 1 1 1","output":"17"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/棋盘最短路2.cpp","group":"local","local":true}

@@ -1,0 +1,44 @@
+g++ -Wall -Wextra -std=c++17 -O2 /Users/xiexie/code/cpp_new/6253.cpp -o /Users/xiexie/code/cpp_new/6253
+g++ -Wall -Wextra -std=c++17 -O2 /Users/xiexie/code/cpp_new/6253_gen.cpp -o /Users/xiexie/code/cpp_new/6253_gen
+g++ -Wall -Wextra -std=c++17 -O2 /Users/xiexie/code/cpp_new/6253_cp.cpp -o /Users/xiexie/code/cpp_new/6253_cp
+mkdir -p /Users/xiexie/code/cpp_new/6253_data/in/
+mkdir -p /Users/xiexie/code/cpp_new/6253_data/out/
+/Users/xiexie/code/cpp_new/6253_gen > /Users/xiexie/code/cpp_new/6253_data/in/1.in
+/Users/xiexie/code/cpp_new/6253_cp < /Users/xiexie/code/cpp_new/6253_data/in/1.in > /Users/xiexie/code/cpp_new/6253_data/out/1.ans
+/Users/xiexie/code/cpp_new/6253 < /Users/xiexie/code/cpp_new/6253_data/in/1.in > /Users/xiexie/code/cpp_new/6253_data/out/1.out
+diff -w /Users/xiexie/code/cpp_new/6253_data/out/1.ans /Users/xiexie/code/cpp_new/6253_data/out/1.out
+Testcase 1 Accepted.
+/Users/xiexie/code/cpp_new/6253_gen > /Users/xiexie/code/cpp_new/6253_data/in/2.in
+/Users/xiexie/code/cpp_new/6253_cp < /Users/xiexie/code/cpp_new/6253_data/in/2.in > /Users/xiexie/code/cpp_new/6253_data/out/2.ans
+/Users/xiexie/code/cpp_new/6253 < /Users/xiexie/code/cpp_new/6253_data/in/2.in > /Users/xiexie/code/cpp_new/6253_data/out/2.out
+diff -w /Users/xiexie/code/cpp_new/6253_data/out/2.ans /Users/xiexie/code/cpp_new/6253_data/out/2.out
+Testcase 2 Accepted.
+/Users/xiexie/code/cpp_new/6253_gen > /Users/xiexie/code/cpp_new/6253_data/in/3.in
+/Users/xiexie/code/cpp_new/6253_cp < /Users/xiexie/code/cpp_new/6253_data/in/3.in > /Users/xiexie/code/cpp_new/6253_data/out/3.ans
+/Users/xiexie/code/cpp_new/6253 < /Users/xiexie/code/cpp_new/6253_data/in/3.in > /Users/xiexie/code/cpp_new/6253_data/out/3.out
+diff -w /Users/xiexie/code/cpp_new/6253_data/out/3.ans /Users/xiexie/code/cpp_new/6253_data/out/3.out
+Testcase 3 Accepted.
+/Users/xiexie/code/cpp_new/6253_gen > /Users/xiexie/code/cpp_new/6253_data/in/1.in
+/Users/xiexie/code/cpp_new/6253_cp < /Users/xiexie/code/cpp_new/6253_data/in/1.in > /Users/xiexie/code/cpp_new/6253_data/out/1.ans
+/Users/xiexie/code/cpp_new/6253 < /Users/xiexie/code/cpp_new/6253_data/in/1.in > /Users/xiexie/code/cpp_new/6253_data/out/1.out
+diff -w /Users/xiexie/code/cpp_new/6253_data/out/1.ans /Users/xiexie/code/cpp_new/6253_data/out/1.out
+Testcase 1 Accepted.
+/Users/xiexie/code/cpp_new/6253_gen > /Users/xiexie/code/cpp_new/6253_data/in/2.in
+/Users/xiexie/code/cpp_new/6253_cp < /Users/xiexie/code/cpp_new/6253_data/in/2.in > /Users/xiexie/code/cpp_new/6253_data/out/2.ans
+/Users/xiexie/code/cpp_new/6253 < /Users/xiexie/code/cpp_new/6253_data/in/2.in > /Users/xiexie/code/cpp_new/6253_data/out/2.out
+diff -w /Users/xiexie/code/cpp_new/6253_data/out/2.ans /Users/xiexie/code/cpp_new/6253_data/out/2.out
+Testcase 2 Accepted.
+/Users/xiexie/code/cpp_new/6253_gen > /Users/xiexie/code/cpp_new/6253_data/in/3.in
+/Users/xiexie/code/cpp_new/6253_cp < /Users/xiexie/code/cpp_new/6253_data/in/3.in > /Users/xiexie/code/cpp_new/6253_data/out/3.ans
+/Users/xiexie/code/cpp_new/6253 < /Users/xiexie/code/cpp_new/6253_data/in/3.in > /Users/xiexie/code/cpp_new/6253_data/out/3.out
+diff -w /Users/xiexie/code/cpp_new/6253_data/out/3.ans /Users/xiexie/code/cpp_new/6253_data/out/3.out
+Testcase 3 Accepted.
+/Users/xiexie/code/cpp_new/6253_gen > /Users/xiexie/code/cpp_new/6253_data/in/1.in
+/Users/xiexie/code/cpp_new/6253_cp < /Users/xiexie/code/cpp_new/6253_data/in/1.in > /Users/xiexie/code/cpp_new/6253_data/out/1.ans
+/Users/xiexie/code/cpp_new/6253 < /Users/xiexie/code/cpp_new/6253_data/in/1.in > /Users/xiexie/code/cpp_new/6253_data/out/1.out
+diff -w /Users/xiexie/code/cpp_new/6253_data/out/1.ans /Users/xiexie/code/cpp_new/6253_data/out/1.out
+Testcase 1 Accepted.
+/Users/xiexie/code/cpp_new/6253_gen > /Users/xiexie/code/cpp_new/6253_data/in/2.in
+/Users/xiexie/code/cpp_new/6253_cp < /Users/xiexie/code/cpp_new/6253_data/in/2.in > /Users/xiexie/code/cpp_new/6253_data/out/2.ans
+/Users/xiexie/code/cpp_new/6253 < /Users/xiexie/code/cpp_new/6253_data/in/2.in > /Users/xiexie/code/cpp_new/6253_data/out/2.out
+diff -w /Users/xiexie/code/cpp_new/6253_data/out/2.ans /Users/xiexie/cod

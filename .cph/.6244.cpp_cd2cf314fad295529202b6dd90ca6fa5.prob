@@ -1,0 +1,1 @@
+{"name":"Local: 6244","url":"/Users/xiexie/code/cpp_new/6244.cpp","tests":[{"id":1698622950378,"input":"4\n1 2 ab\n2 4 ac\n1 3 bc\n3\n1 4 a\n3 4 b\n3 2 ab","output":"2\n1\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/6244.cpp","group":"local","local":true}

@@ -1,7 +1,7 @@
 #include <cstdio>
 #include <algorithm>
 #include <vector>
-#include <map>
+#include <unordered_map>
 #define l(u) t[u].l
 #define r(u) t[u].r
 #define ls(u) (u << 1)
@@ -10,7 +10,7 @@
 const int N = 1e6 + 5;
 int n, ta[N], res;
 std::vector<int> bu;
-std::map <int, int> ma;
+std::unordered_map <int, int> ma;
 struct Tree{
     int l, r, sum;
 }t[N << 2];

@@ -192,24 +192,35 @@ void work(){
                         spfu(i, a[0], a[1], k);
                     // quiter();
                 }
+                // debug(k, i);
                 if(!flagForTwo && line[k][i] == '<'){
                     if(line[k].find("include") || line[k].find("define")){
-                        puts("include || define detected, push 1.");
+                        // puts("include || define detected, push 1.");
+                        i++;
                         ans[k] += '<';
-                        jian.push(1);
+                        while(line[k][i] != '>'){
+                            ans[k] += line[k][i];
+                            i++;
+                        }
+                        ans[k] += line[k][i], i++;
+                        // ans[k] += '<';
+                        // jian.push(1);
                     }else{
                         ans[k] += " < ";
                     }
                 }
                 if(line[k][i] == '>' && !flagForTwo){
-                    if(jian.top()){
-                        puts("detected > symbol, pop.");
-                        ans[k] += '>';
-                        jian.pop();
-                    }else{
-                        ans[k] += " > ";
-                    }
+                    ans[k] += " > ";
                 }
+                // if(line[k][i] == '>' && !flagForTwo){
+                //     if(jian.top()){
+                //         puts("detected > symbol, pop.");
+                //         ans[k] += '>';
+                //         jian.pop();
+                //     }else{
+                //         ans[k] += " > ";
+                //     }
+                // }
                 if(!flagForTwo){
                     for (char a : {'+', '-', '*', '/', '=', '^', '?', ':', '~'}){
                         nofu(i, a, k);
@@ -222,6 +233,8 @@ void work(){
             }
             if(line[k][i] == ';') fenhao(i, k);
             if(line[k][i] == ',') douhao(i, k);
+            debug(k, i);
+            // if(line[k][i] == '%') ans[k] += '%';
             for (char a : {'{', '}', '(', ')', '.', '_', '$', '@', '!', '\'', '%', '&', '#'}){
                 direct(i, a, k);
             }

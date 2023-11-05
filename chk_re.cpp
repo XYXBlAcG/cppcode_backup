@@ -7,6 +7,7 @@
 #include <vector>
 #define int long long
 using std::cin;
+std::ofstream outFile;
 std::string inputCppFile = "/Users/xiexie/code/cpp_new/6142.cpp", \
 res, \
 outputCppFile = "/Users/xiexie/code/cpp_new/6142", \
@@ -68,8 +69,14 @@ struct ReadFile{
 }readfile;
 
 clock_t st, ed;
+void runcommand(std::string str){
+    if(system(str.c_str())){
+        puts("config内的配置文件可能存在问题, 或你的程序出现问题导致程序输出了额外语句, 请进行检查.");
+    }
+    outFile << str << '\n';
+}
 signed main(){
-    std::ofstream outFile;
+    
     if(!readfile.content()){
         puts("程序已退出.");
         return 0;
@@ -81,51 +88,60 @@ signed main(){
             puts("成功读入config.");
         }
     }
-    
-    res = "g++ -Wall -Wextra -std=c++14 -O2 " + inputCppFile + " -o " + outputCppFile;
-    res2 = "g++ -Wall -Wextra -std=c++14 -O2 " + inputMakeFile + " -o " + outputMakeFile;
-    res3 = "g++ -Wall -Wextra -std=c++14 -O2 " + correctCppFile + " -o " + correctMakeFile;
-    system(res.c_str());
-    system(res2.c_str());
-    system(res3.c_str());
     outFile.open(inputCppFile + "_log.log");
-    outFile << res;
-    outFile << res2;
-    outFile << res3;
+    res = "g++ -Wall -Wextra -std=c++17 -O2 " + inputCppFile + " -o " + outputCppFile;
+    res2 = "g++ -Wall -Wextra -std=c++17 -O2 " + inputMakeFile + " -o " + outputMakeFile;
+    res3 = "g++ -Wall -Wextra -std=c++17 -O2 " + correctCppFile + " -o " + correctMakeFile;
+    // system(res.c_str());
+    // system(res2.c_str());
+    // system(res3.c_str());
+    // outFile << res << '\n';
+    // outFile << res2 << '\n';
+    // outFile << res3 << '\n';
+    runcommand(res);
+    runcommand(res2);
+    runcommand(res3);
     std::string tmp = "mkdir -p " + inputFileFolder;
-    system(tmp.c_str());
+    // system(tmp.c_str());
+    runcommand(tmp);
     tmp = "mkdir -p " + outputFileFolder;
-    system(tmp.c_str());
+    // system(tmp.c_str());
+    runcommand(tmp);
     while(howMany--){
         cnt %= filemax;
         cnt++, ac = 0, cnt2++;
         std::string comp = "", outer = "", correct = "", cp = "";
         comp = outputMakeFile + " > " + inputFileFolder + std::to_string(cnt) + ".in";
-        system(comp.c_str());
-        outFile << comp << "\n";
+        // system(comp.c_str());
+        runcommand(comp);
+        // outFile << comp << "\n";
         outer = outputCppFile + " < " + inputFileFolder + std::to_string(cnt) + ".in" + " > " + outputFileFolder + std::to_string(cnt) + ".out";
         correct = correctMakeFile + " < " + inputFileFolder + std::to_string(cnt) + ".in" + " > " + outputFileFolder + std::to_string(cnt) + ".ans";
-        outFile << outer << "\n";
+        // outFile << outer << "\n";
         printf("开始执行! Testcase %lld.\n", cnt2);
-        system(correct.c_str());
+        // system(correct.c_str());
+        runcommand(correct);
         st = clock();
-        system(outer.c_str());
+        // system(outer.c_str());
+        runcommand(outer);
         ed = clock();
-        outFile << outer << "\n";
+        // outFile << outer << "\n";
         printf("结束执行,耗时%lf毫秒.\n", (double)(ed - st));
         cp = "diff -w " + outputFileFolder + std::to_string(cnt) + ".ans " + outputFileFolder + std::to_string(cnt) + ".out";
+        outFile << cp << '\n';
         if(system(cp.c_str())) {
             puts("状态: Wrong Answer.");
             puts("程序已退出.");
-            outFile << "Testcase " + std::to_string(cnt) + " quit. Wrong Answer. Time = " + std::to_string(double(ed - st)) + "ms.\n";
+            printf("错误文件输入: %lld.in\n", cnt);
+            outFile << "Testcase " + std::to_string(cnt2) + " quit. Wrong Answer. Time = " + std::to_string(double(ed - st)) + "ms.\n";
             puts("一些操作的日志输出到了目录下的.log文件里面.");
             return 0;
         }else if(double(ed - st) >= 1000){
             puts("状态: Time Limit Exceeded.");
-            outFile << "Testcase " + std::to_string(cnt) + " Time Limit Exceeded.";
+            outFile << "Testcase " + std::to_string(cnt2) + " Time Limit Exceeded.\n";
         }else{
             puts("状态: Accepted!");
-            outFile << "Testcase " + std::to_string(cnt) + " Accepted.";
+            outFile << "Testcase " + std::to_string(cnt2) + " Accepted.\n";
         }
     }
     return 0;

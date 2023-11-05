@@ -1,0 +1,1 @@
+{"name":"Local: S15","url":"/Users/xiexie/code/cpp_new/S15.23.06.3. 树上的数_re.cpp","tests":[{"id":1699086184218,"input":"4 1\n1 2 2\n1 3 1\n1 4 1\n4 1 2 3 4\n","output":"2.50000\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/S15.23.06.3. 树上的数_re.cpp","group":"local","local":true}
