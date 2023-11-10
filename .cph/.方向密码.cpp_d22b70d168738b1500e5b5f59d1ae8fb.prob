@@ -1,0 +1,1 @@
+{"name":"Local: 方向密码","url":"/Users/xiexie/code/cpp_new/方向密码.cpp","tests":[{"id":1699488437616,"input":"7 3\nSNNSSNS\nNNSS\nNNN\nWSEE\n","output":"4\n2\n0\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/方向密码.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: S05","url":"/Users/xiexie/code/cpp_new/S05.23.01.1. 问候.cpp","tests":[{"id":1699248292449,"input":"1\n3 3\n1 2 2\n2 3 2\n","output":"12\n"},{"id":1699248328878,"input":"1\n5 4\n1 1 1 1 1\n1 1 1 1","output":"10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/S05.23.01.1. 问候.cpp","group":"local","local":true}

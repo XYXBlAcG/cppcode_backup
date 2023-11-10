@@ -1,4 +1,5 @@
 #include <cstdio>
+#define pline printf("Now is the line: %d\n", __LINE__);
 // #define pr(...) printf(__VA_ARGS__)
 namespace xyx{
     void aaa(){puts("aaa");fflush(stdout);}
@@ -31,6 +32,5 @@ namespace xyx{
     void start(){puts("-----start-----");fflush(stdout);}
     void end(){puts("-----end-----");fflush(stdout);}
     void ___(){puts("--------------------------------------");fflush(stdout);}
-    
     // wait to add sth.
 };

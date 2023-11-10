@@ -17,6 +17,7 @@ namespace xyx{
     /*
     使用方法:
     randA(int 随机排列的元素个数)
+    this part is from oi.wiki
     */
     template <size_t Size>
     void randA(int n){

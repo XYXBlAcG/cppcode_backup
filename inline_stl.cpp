@@ -107,6 +107,19 @@ namespace xyx{
             addsignle(v, u, 0, -f);
         }
     };
+
+    template<size_t Size>
+    struct OONP{
+        private:
+            std::vector<int> st[Size];
+            void create(){
+                
+            }
+        public:
+        void init(){
+
+        }
+    };
     // template<size_t Size>
     // struct SPFA{
     //     std::queue<int> que;

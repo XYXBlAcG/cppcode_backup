@@ -11,8 +11,12 @@ int main(){
     // maketree.makeTree(20, 1, 1, 1, 100);
     // maketree.makeLian(20, 1, 1, 100);
     // freopen("xyxtest.out", "w", stdout);
-    makeGraph.DAG(1000, 499501, 0);
+    // makeGraph.DAG(1000, 499501, 0);
     // fclose(stdout);
+    // runCommand();
+    // maketree.makeTree(50, 1, 1, 1, 100);
+    // makeGraph.DAG(5, 10, 0);
+    makeGraph.undirectedGraph(1, 1);
     return 0;
 }
 

@@ -1,4 +1,5 @@
 #include <cstdio>
+#include <algorithm>
 #include <vector>
 const int N = 1e6 + 5;
 #define int long long
@@ -38,7 +39,7 @@ int gcd(int a, int b){ return (b == 0) ? a : gcd(b, a % b);}
 signed main(){
     scanf("%lld",&n), init();
     for (int i = 1; i <= n; i++){
-        scanf("%lld%lld%lld",&a,&b,&c);
+        scanf("%lld%lld%lld", &a, &b, &c);
         for (int j = 1; pri[j] * pri[j] <= n; j++){
             int tc = c, cn = 0, pi = 1;
             while(tc % pri[j] == 0){
@@ -48,9 +49,7 @@ signed main(){
                 printf("nO sOLuTiOn\n");
                 return 0;
             }else{
-                for (int tmp = pi, mod = b % gcd(a, tmp); tmp; mod = b % gcd(a, (tmp /= pri[j]))){
-                    // if()
-                }
+                
             }
         }
     }

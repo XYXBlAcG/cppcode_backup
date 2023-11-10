@@ -57,14 +57,6 @@ signed main(){
     for (long long i = 1; i <= n; i++){
         for (long long j = 1; j <= 6; j++)
             scanf("%lld", az + j), az[j + 6] = az[j];
-        // long long th1 = hash_(0), th2 = hash_(1);
-        // prlong longf("%lld %lld\n", th1, th2);
-        // if(hash[th1] && cnt[hash[th1]] == th2){
-        //     printf("%lld\n", hash[th1]);
-        //     continue;
-        // }
-        // hash[th1] = i;
-        // cnt[i] = th2;
         long long th1 = hash_(0), th2 = hash_(1);
         NN &res = query(th1, th2, i);
         printf("%lld\n", res.id);

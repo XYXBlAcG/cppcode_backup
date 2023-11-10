@@ -1,7 +1,7 @@
 #include <cstdio>
 #include <algorithm>
 #include <vector>
-#include <map>
+#include <unordered_map>
 #include <cmath>
 #define l(u) t[u].l
 #define r(u) t[u].r
@@ -12,7 +12,7 @@
 const int N = 1e6 + 5;
 int n, ta[N], res, heng, shu, last;
 std::vector<int> bu;
-std::map <int, int> ma;
+std::unordered_map <int, int> ma;
 struct Tree{
     int l, r, sum, num, bl, br, len;
 }t[N << 2];
@@ -61,7 +61,7 @@ signed main(){
     }
     std::sort(rec + 1, rec + 1 + 2 * n, cmp);
     std::sort(bu.begin(), bu.end());
-    std::unique(bu.begin(), bu.end());
+    // std::unique(bu.begin(), bu.end());
     int cnt = 0;
     for (auto v : bu) ma[v] = ++cnt;
     build(1, 1, cnt);

@@ -1,10 +1,11 @@
 #include <cstdio>
 #include <vector>
-#include <map>
-#include <stdlib.h>
-#define random(a, b) rand() % (b - a + 1) + a
+#include <unordered_map>
+#include <random>
 #define int unsigned long long
-const int N = 55, INF = 0x3f3f3f3f3f3f3f3f, a = random(1, INF);
+std::mt19937 frand(114514);
+int rnd(int a, int b){return frand() % (b - a + 1) + a;}
+const int N = 55, INF = 0x3f3f3f3f3f3f3f3f, a = rnd(1, INF);
 int rand(int x){
     x ^= a;
     x ^= x << 13;
@@ -15,7 +16,7 @@ int rand(int x){
 }
 int m, n, d[N], u[N];
 std::vector<int> st[N];
-std::map<int, int> ma;
+std::unordered_map<int, int> ma;
 void down(int x){
     d[x] = 1;
     for (auto v : st[x]) down(v), d[x] += rand(d[v]);

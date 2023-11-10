@@ -10,11 +10,11 @@ using std::ifstream;
 using std::cin;
 using std::string;
 const int N = 1e5 + 5;
-string ign = "lbumwterhndckg";
+string ign = "cranthsmi";
 // string p[5] = {"", "", "", "", ""};
-string pc = (string)" " + " " + "s" + "p" + " ";
+string pc = (string)" " + " " + "v" + " " + " ";
 // char pc[5] = {' ', ' ', ' ', ' ', ' '};
-char ch[5] = {' ', 'a', ' ', ' ', 's'};
+char ch[5] = {' ', 'o', ' ', ' ', 'e'};
 int n = 5757;
 string word[N];
 int main() {

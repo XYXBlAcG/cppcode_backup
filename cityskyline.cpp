@@ -23,7 +23,7 @@ int main(){
     for (int i = 1, u, v, w; i <= m; i++){
         scanf("%d%d%d", &u, &v, &w);
         add(u, v, w);
-    
+    }
     
     return 0;
 }
