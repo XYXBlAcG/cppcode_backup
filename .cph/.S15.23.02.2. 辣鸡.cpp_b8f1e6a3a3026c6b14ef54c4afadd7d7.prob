@@ -1,0 +1,1 @@
+{"name":"Local: S15","url":"/Users/xiexie/code/cpp_new/S15.23.02.2. 辣鸡.cpp","tests":[{"id":1699684090805,"input":"15 15 5 2\n2\n5\n10\n6\n4\n11\n3","output":"44"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/S15.23.02.2. 辣鸡.cpp","group":"local","local":true}

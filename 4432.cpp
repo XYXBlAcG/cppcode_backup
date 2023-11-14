@@ -15,7 +15,7 @@ struct Segment_Tree {
     inline int len(int u) { return rl[u] - ll[u] + 1; }
 
     inline void pushdown(int u){
-        if(u <= 2 * n){
+        // if(u <= 2 * n){
             add[ls(u)] = (add[ls(u)] * mul[u] + add[u]) % p;
             (mul[ls(u)] *= mul[u]) %= p;
             sum[ls(u)] = (sum[ls(u)] * mul[u] + (add[u] * len(ls(u))) % p) % p;
@@ -23,7 +23,7 @@ struct Segment_Tree {
             add[rs(u)] = (add[rs(u)] * mul[u] + add[u]) % p;
             (mul[rs(u)] *= mul[u]) %= p;
             sum[rs(u)] = (sum[rs(u)] * mul[u] + (add[u] * len(rs(u))) % p) % p;
-        }
+        // }
         mul[u] = 1, add[u] = 0;
     }
 

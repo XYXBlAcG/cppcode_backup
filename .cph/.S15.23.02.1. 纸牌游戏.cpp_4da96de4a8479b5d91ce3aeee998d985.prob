@@ -1,0 +1,1 @@
+{"name":"Local: S15","url":"/Users/xiexie/code/cpp_new/S15.23.02.1. 纸牌游戏.cpp","tests":[{"id":1699681743278,"input":"3\n1\n6\n4","output":"2"},{"id":1699682121755,"input":"2\n1\n4","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/S15.23.02.1. 纸牌游戏.cpp","group":"local","local":true}

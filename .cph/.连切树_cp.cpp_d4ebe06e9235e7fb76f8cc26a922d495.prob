@@ -1,0 +1,1 @@
+{"name":"Local: 连切树_cp","url":"/Users/xiexie/code/cpp_new/连切树_cp.cpp","tests":[{"id":1699947401196,"input":"10\n2 4\n9 1\n9 6\n3 10\n8 6\n4 5\n10 8\n3 7\n4 10","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/连切树_cp.cpp","group":"local","local":true}
