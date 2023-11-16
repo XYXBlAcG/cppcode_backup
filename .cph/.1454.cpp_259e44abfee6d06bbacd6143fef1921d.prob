@@ -1,0 +1,1 @@
+{"name":"Local: 1454","url":"/Users/xiexie/code/cpp_new/1454.cpp","tests":[{"id":1700014466572,"input":"5\n1 100 100\n10 99 101\n100 99 102\n90 98 101\n80 90 111\n","output":"314\n"},{"id":1700017059814,"input":"1\n134 59 137","output":"-59"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/1454.cpp","group":"local","local":true}

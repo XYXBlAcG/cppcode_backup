@@ -14,7 +14,7 @@ namespace xyx{
         void pop(){std::pop_heap(data + 1, data + 1 + pdata--);}
         T top(){return data[1];}
         int size(){return pdata;}
-        bool empty(){return pdata;}
+        bool empty(){return !pdata;}
         T* begin(){return &data[1];}
         T* end(){return &data[pdata + 1];}
     };
@@ -26,7 +26,7 @@ namespace xyx{
         T operator[](int x){return data[x];}
         T top(){return data[pdata];}
         int size(){return pdata;}
-        bool empty(){return pdata;}
+        bool empty(){return !pdata;}
         int* begin(){return &data[1];}
         int* end(){return &data[pdata + 1];}
     };
@@ -38,7 +38,7 @@ namespace xyx{
         T tail(){return data[l + 1];}
         T head(){return data[r];}
         int size(){return r - l;}
-        bool empty(){return r - l;}
+        bool empty(){return !(r - l);}
         int* begin(){return &data[l + 1];}
         int* end(){return &data[r + 1];}
     };
@@ -55,8 +55,8 @@ namespace xyx{
                 for (int i = st; i <= n; i++) fa[i] = i;
             }
             int find(int x, int zip = 1){
-                if(zip == 1) return fa[x] == x ? x : fa[x] = find(fa[x]);
-                else return fa[x] == x ? x : find(fa[x]);
+                if(zip == 1) return fa[x] == x ? x : fa[x] = find(fa[x], zip);
+                else return fa[x] == x ? x : find(fa[x], zip);
             }
             bool same(int x, int y){
                 return find(x) == find(y);

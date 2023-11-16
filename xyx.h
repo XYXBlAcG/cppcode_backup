@@ -6,3 +6,4 @@
 #include "inline_stl.cpp"
 #include "inline_debugger.cpp"
 #include "inline_game.cpp"
+#include "inline_head.cpp"

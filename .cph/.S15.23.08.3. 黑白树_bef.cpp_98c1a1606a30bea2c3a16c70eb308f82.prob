@@ -1,0 +1,1 @@
+{"name":"Local: S15","url":"/Users/xiexie/code/cpp_new/S15.23.08.3. 黑白树_bef.cpp","tests":[{"id":1700115618273,"input":"7\n0 1 2 0 3 2 \n1 0 0 0 0 1 0","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/S15.23.08.3. 黑白树_bef.cpp","group":"local","local":true}

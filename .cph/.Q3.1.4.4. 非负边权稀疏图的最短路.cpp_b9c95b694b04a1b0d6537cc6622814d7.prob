@@ -1,0 +1,1 @@
+{"name":"Local: Q3","url":"/Users/xiexie/code/cpp_new/Q3.1.4.4. 非负边权稀疏图的最短路.cpp","tests":[{"id":1700093967565,"input":"5 10\n3 2 8\n5 4 7\n1 4 8\n2 5 3\n3 4 8\n3 5 2\n4 3 6\n4 1 1\n5 3 6\n5 1 9","output":"16"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/Q3.1.4.4. 非负边权稀疏图的最短路.cpp","group":"local","local":true}

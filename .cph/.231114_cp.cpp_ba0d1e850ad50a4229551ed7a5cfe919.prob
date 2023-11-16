@@ -1,0 +1,1 @@
+{"name":"Local: 231114_cp","url":"/Users/xiexie/code/cpp_new/231114_cp.cpp","tests":[{"id":1699964653162,"input":"8 3\n1 4 7 8 8 8 8 8","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/xiexie/code/cpp_new/231114_cp.cpp","group":"local","local":true}
